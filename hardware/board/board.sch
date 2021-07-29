@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Speak to Me / Breathe"
-Date "2021-07-03"
-Rev "v6"
+Date "2021-07-28"
+Rev "v7"
 Comp "Winterbloom"
 Comment1 "CERN-OHL-P v2"
 Comment2 "Alethea Flowers"
@@ -29,11 +29,11 @@ L Device:C C2
 U 1 1 5F8B94CA
 P 3875 7050
 F 0 "C2" H 3990 7096 50  0000 L CNN
-F 1 "10uF" H 3990 7005 50  0000 L CNN
+F 1 "22uF" H 3990 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3913 6900 50  0001 C CNN
 F 3 "~" H 3875 7050 50  0001 C CNN
 F 4 "GRM32 series, low esr, 10-47uF" H 3875 7050 50  0001 C CNN "notes"
-F 5 "GRM21BR61E106KA73K" H 3875 7050 50  0001 C CNN "mpn"
+F 5 "GRM21BR61E226ME44K" H 3875 7050 50  0001 C CNN "mpn"
 	1    3875 7050
 	1    0    0    -1  
 $EndComp
@@ -62,6 +62,8 @@ F 0 "LS1" H 9945 5321 50  0000 L CNN
 F 1 "Speaker" H 9945 5230 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9775 5125 50  0001 C CNN
 F 3 "~" H 9765 5275 50  0001 C CNN
+F 4 "B2B-XH-A" H 9775 5325 50  0001 C CNN "mpn"
+F 5 "Speaker: CDS-40288" H 9775 5325 50  0001 C CNN "notes"
 	1    9775 5325
 	1    0    0    -1  
 $EndComp
@@ -93,10 +95,10 @@ L Device:R_US R6
 U 1 1 5F965819
 P 2475 1100
 F 0 "R6" V 2270 1100 50  0000 C CNN
-F 1 "10k" V 2361 1100 50  0000 C CNN
+F 1 "30k" V 2361 1100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 1090 50  0001 C CNN
 F 3 "~" H 2475 1100 50  0001 C CNN
-F 4 "MCT06030D1002DP500" H 2475 1100 50  0001 C CNN "mpn"
+F 4 "TODO" H 2475 1100 50  0001 C CNN "mpn"
 	1    2475 1100
 	0    1    1    0   
 $EndComp
@@ -138,8 +140,8 @@ F 3 "" H 2175 1550 50  0001 C CNN
 	1    2175 1550
 	1    0    0    -1  
 $EndComp
-Text Notes 1625 2950 0    50   ~ 0
-Attenuator: 10vpp to 1vpp, gain: -0.1
+Text Notes 625  850  0    50   ~ 0
+Gain: -0.3\nAssuming max input of 12v pkpk\nMax output 3.6v pkpk
 $Comp
 L power:GND #PWR0115
 U 1 1 5F975148
@@ -182,10 +184,11 @@ L Device:LED_ALT D1
 U 1 1 5F97F2B3
 P 7750 1325
 F 0 "D1" V 7775 1500 50  0000 R CNN
-F 1 "Blue" V 7700 1400 50  0000 L CNN
+F 1 "Green" V 7700 1400 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7750 1325 50  0001 C CNN
 F 3 "~" H 7750 1325 50  0001 C CNN
-F 4 "APT2012VBC/D" V 7750 1325 50  0001 C CNN "mpn"
+F 4 "APT2012ZGC/G, APT2012ZGC/E, APHCM2012ZGC/G-F01, APHCM2012ZGCK-F01" V 7750 1325 50  0001 C CNN "mpn"
+F 5 "" H 7750 1325 50  0001 C CNN "notes"
 	1    7750 1325
 	0    -1   -1   0   
 $EndComp
@@ -208,8 +211,8 @@ F 0 "R8" H 6857 1779 50  0000 R CNN
 F 1 "1k" H 6857 1870 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6965 1815 50  0001 C CNN
 F 3 "~" H 6925 1825 50  0001 C CNN
-F 4 "TNPW06031K00FHEA" H 6925 1825 50  0001 C CNN "mpn"
-F 5 "RN73R1JTTD1001D25" H 6925 1825 50  0001 C CNN "notes"
+F 4 "TNPW06031K00FHEA, RN73R1JTTD1001D25" H 6925 1825 50  0001 C CNN "mpn"
+F 5 "" H 6925 1825 50  0001 C CNN "notes"
 	1    6925 1825
 	-1   0    0    1   
 $EndComp
@@ -316,7 +319,8 @@ F 0 "C10" H 10042 1221 50  0000 L CNN
 F 1 "0.1uF" H 10042 1130 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1175 50  0001 C CNN
 F 3 "~" H 9950 1175 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF" H 9950 1175 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF, GRM188R61E106KA73D" H 9950 1175 50  0001 C CNN "mpn"
+F 5 "Bypass" H 9950 1175 50  0001 C CNN "notes"
 	1    9950 1175
 	1    0    0    -1  
 $EndComp
@@ -328,7 +332,8 @@ F 0 "C11" H 10042 1621 50  0000 L CNN
 F 1 "0.1uF" H 10042 1530 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1575 50  0001 C CNN
 F 3 "~" H 9950 1575 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF" H 9950 1575 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF, GRM188R61E106KA73D" H 9950 1575 50  0001 C CNN "mpn"
+F 5 "Bypass" H 9950 1575 50  0001 C CNN "notes"
 	1    9950 1575
 	1    0    0    -1  
 $EndComp
@@ -373,7 +378,8 @@ F 0 "C14" H 8110 4229 50  0000 R CNN
 F 1 "0.1uF" H 8110 4320 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8263 4125 50  0001 C CNN
 F 3 "~" H 8225 4275 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF" H 8225 4275 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF, GRM188R61E106KA73D" H 8225 4275 50  0001 C CNN "mpn"
+F 5 "Bypass" H 8225 4275 50  0001 C CNN "notes"
 	1    8225 4275
 	-1   0    0    1   
 $EndComp
@@ -407,7 +413,8 @@ F 0 "C13" H 7685 4229 50  0000 R CNN
 F 1 "10uF" H 7685 4320 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7838 4125 50  0001 C CNN
 F 3 "~" H 7800 4275 50  0001 C CNN
-F 4 "GRM188R61E106KA73D" H 7800 4275 50  0001 C CNN "mpn"
+F 4 "" H 7800 4275 50  0001 C CNN "mpn"
+F 5 "Bypass" H 7800 4275 50  0001 C CNN "notes"
 	1    7800 4275
 	-1   0    0    1   
 $EndComp
@@ -431,6 +438,7 @@ F 1 "1uF" V 5839 2950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 2800 50  0001 C CNN
 F 3 "~" H 6000 2950 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 6000 2950 50  0001 C CNN "mpn"
+F 5 "Audio" H 6000 2950 50  0001 C CNN "notes"
 	1    6000 2950
 	0    1    1    0   
 $EndComp
@@ -443,6 +451,7 @@ F 1 "1uF" V 5775 3150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 3000 50  0001 C CNN
 F 3 "~" H 6000 3150 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 6000 3150 50  0001 C CNN "mpn"
+F 5 "Audio" H 6000 3150 50  0001 C CNN "notes"
 	1    6000 3150
 	0    -1   -1   0   
 $EndComp
@@ -480,51 +489,6 @@ SWITCHED_L
 Text GLabel 5475 3150 0    50   Input ~ 0
 SWITCHED_R
 $Comp
-L Device:R_US R4
-U 1 1 6044BFAE
-P 5775 3700
-F 0 "R4" V 5675 3700 50  0000 C CNN
-F 1 "100k" V 5850 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5815 3690 50  0001 C CNN
-F 3 "~" H 5775 3700 50  0001 C CNN
-F 4 "ERA-3AED104V" H 5775 3700 50  0001 C CNN "mpn"
-	1    5775 3700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R3
-U 1 1 6044C35C
-P 5550 3450
-F 0 "R3" V 5450 3450 50  0000 C CNN
-F 1 "100k" V 5650 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5590 3440 50  0001 C CNN
-F 3 "~" H 5550 3450 50  0001 C CNN
-F 4 "ERA-3AED104V" H 5550 3450 50  0001 C CNN "mpn"
-	1    5550 3450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5475 2950 5550 2950
-Wire Wire Line
-	5550 2950 5550 3300
-Connection ~ 5550 2950
-Wire Wire Line
-	5775 3150 5775 3550
-Wire Wire Line
-	5475 3150 5775 3150
-Connection ~ 5775 3150
-$Comp
-L power:GND #PWR0126
-U 1 1 6045886F
-P 5675 3950
-F 0 "#PWR0126" H 5675 3700 50  0001 C CNN
-F 1 "GND" H 5675 3800 50  0000 C CNN
-F 2 "" H 5675 3950 50  0001 C CNN
-F 3 "" H 5675 3950 50  0001 C CNN
-	1    5675 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L winterbloom:TL074 U3
 U 2 1 60469E71
 P 2475 2450
@@ -541,10 +505,10 @@ L Device:R_US R2
 U 1 1 60469E7B
 P 2475 2100
 F 0 "R2" V 2270 2100 50  0000 C CNN
-F 1 "10k" V 2361 2100 50  0000 C CNN
+F 1 "30k" V 2361 2100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 2090 50  0001 C CNN
 F 3 "~" H 2475 2100 50  0001 C CNN
-F 4 "MCT06030D1002DP500" H 2475 2100 50  0001 C CNN "mpn"
+F 4 "TODO" H 2475 2100 50  0001 C CNN "mpn"
 	1    2475 2100
 	0    1    1    0   
 $EndComp
@@ -625,6 +589,8 @@ F 0 "RV1" H 3431 2646 50  0000 R CNN
 F 1 "Volume" H 3431 2555 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 3500 2600 50  0001 C CNN
 F 3 "~" H 3500 2600 50  0001 C CNN
+F 4 "RK09L12D0A1W" H 3500 2600 50  0001 C CNN "mpn"
+F 5 "Depending on knob, try to source a round or t18 shaft" H 3500 2600 50  0001 C CNN "notes"
 	1    3500 2600
 	1    0    0    1   
 $EndComp
@@ -649,6 +615,8 @@ F 0 "RV1" H 3431 1646 50  0000 R CNN
 F 1 "Volume" H 3431 1555 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 3500 1600 50  0001 C CNN
 F 3 "~" H 3500 1600 50  0001 C CNN
+F 4 "RK09L12D0A1W" H 3500 1600 50  0001 C CNN "mpn"
+F 5 "Depending on knob, try to source a round or t18 shaft" H 3500 1600 50  0001 C CNN "notes"
 	2    3500 1600
 	1    0    0    1   
 $EndComp
@@ -695,8 +663,8 @@ F 0 "D2" H 2175 7250 50  0000 C CNN
 F 1 "SS24FL" H 2175 7150 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2175 6825 50  0001 C CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/ss26fl-d.pdf" H 2175 7000 50  0001 C CNN
-F 4 "SS24FL" H 2175 7000 50  0001 C CNN "mpn"
-F 5 "FSV360FP" H 2175 7000 50  0001 C CNN "notes"
+F 4 "SS24FL, FSV360FP" H 2175 7000 50  0001 C CNN "mpn"
+F 5 "2A" H 2175 7000 50  0001 C CNN "notes"
 	1    2175 7000
 	1    0    0    -1  
 $EndComp
@@ -708,8 +676,8 @@ F 0 "D3" H 2175 7525 50  0000 C CNN
 F 1 "SS24FL" H 2175 7600 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2175 7225 50  0001 C CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/ss26fl-d.pdf" H 2175 7400 50  0001 C CNN
-F 4 "SS24FL" H 2175 7400 50  0001 C CNN "mpn"
-F 5 "FSV360FP" H 2175 7400 50  0001 C CNN "notes"
+F 4 "SS24FL, FSV360FP" H 2175 7400 50  0001 C CNN "mpn"
+F 5 "2A" H 2175 7400 50  0001 C CNN "notes"
 	1    2175 7400
 	-1   0    0    1   
 $EndComp
@@ -769,8 +737,8 @@ F 0 "R11" V 5420 1600 50  0000 C CNN
 F 1 "1k" V 5511 1600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5665 1590 50  0001 C CNN
 F 3 "~" H 5625 1600 50  0001 C CNN
-F 4 "TNPW06031K00FHEA" H 5625 1600 50  0001 C CNN "mpn"
-F 5 "RN73R1JTTD1001D25" H 5625 1600 50  0001 C CNN "notes"
+F 4 "TNPW06031K00FHEA, RN73R1JTTD1001D25" H 5625 1600 50  0001 C CNN "mpn"
+F 5 "" H 5625 1600 50  0001 C CNN "notes"
 	1    5625 1600
 	0    -1   -1   0   
 $EndComp
@@ -782,8 +750,8 @@ F 0 "R10" V 5420 1375 50  0000 C CNN
 F 1 "1k" V 5511 1375 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5665 1365 50  0001 C CNN
 F 3 "~" H 5625 1375 50  0001 C CNN
-F 4 "TNPW06031K00FHEA" H 5625 1375 50  0001 C CNN "mpn"
-F 5 "RN73R1JTTD1001D25" H 5625 1375 50  0001 C CNN "notes"
+F 4 "TNPW06031K00FHEA, RN73R1JTTD1001D25" H 5625 1375 50  0001 C CNN "mpn"
+F 5 "" H 5625 1375 50  0001 C CNN "notes"
 	1    5625 1375
 	0    1    1    0   
 $EndComp
@@ -848,8 +816,8 @@ F 0 "R13" V 6550 1325 50  0000 R CNN
 F 1 "1k" V 6625 1325 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6765 1265 50  0001 C CNN
 F 3 "~" H 6725 1275 50  0001 C CNN
-F 4 "TNPW06031K00FHEA" H 6725 1275 50  0001 C CNN "mpn"
-F 5 "RN73R1JTTD1001D25" H 6725 1275 50  0001 C CNN "notes"
+F 4 "TNPW06031K00FHEA, RN73R1JTTD1001D25" H 6725 1275 50  0001 C CNN "mpn"
+F 5 "" H 6725 1275 50  0001 C CNN "notes"
 	1    6725 1275
 	0    -1   -1   0   
 $EndComp
@@ -902,7 +870,8 @@ F 0 "J6" H 9955 6242 50  0000 L CNN
 F 1 "Headphones" H 9955 6151 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 9875 6200 50  0001 C CNN
 F 3 "~" H 9875 6200 50  0001 C CNN
-F 4 "SJ-63083D" H 9875 6200 50  0001 C CNN "mpn"
+F 4 "" H 9875 6200 50  0001 C CNN "mpn"
+F 5 "Jack: SJ-63083D" H 9875 6200 50  0001 C CNN "notes"
 	1    9875 6200
 	1    0    0    -1  
 $EndComp
@@ -1038,6 +1007,7 @@ F 1 "1uF" H 3215 4905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3138 4800 50  0001 C CNN
 F 3 "~" H 3100 4950 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 3100 4950 50  0001 C CNN "mpn"
+F 5 "Bypass" H 3100 4950 50  0001 C CNN "notes"
 	1    3100 4950
 	1    0    0    -1  
 $EndComp
@@ -1085,6 +1055,7 @@ F 1 "1uF" H 2835 5745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 5550 50  0001 C CNN
 F 3 "~" H 2950 5700 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 2950 5700 50  0001 C CNN "mpn"
+F 5 "Bypass" H 2950 5700 50  0001 C CNN "notes"
 	1    2950 5700
 	-1   0    0    1   
 $EndComp
@@ -1121,6 +1092,7 @@ F 1 "1uF" H 3235 5745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3388 5550 50  0001 C CNN
 F 3 "~" H 3350 5700 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 3350 5700 50  0001 C CNN "mpn"
+F 5 "Bypass" H 3350 5700 50  0001 C CNN "notes"
 	1    3350 5700
 	-1   0    0    1   
 $EndComp
@@ -1145,7 +1117,8 @@ F 0 "C5" H 2575 5400 50  0000 R CNN
 F 1 "0.1uF" H 2675 5475 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 5250 50  0001 C CNN
 F 3 "~" H 2250 5400 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF" H 2250 5400 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF, GRM188R61E106KA73D" H 2250 5400 50  0001 C CNN "mpn"
+F 5 "Bypass" H 2250 5400 50  0001 C CNN "notes"
 	1    2250 5400
 	-1   0    0    1   
 $EndComp
@@ -1158,6 +1131,7 @@ F 1 "1uF" H 2225 5575 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2388 5350 50  0001 C CNN
 F 3 "~" H 2350 5500 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 2350 5500 50  0001 C CNN "mpn"
+F 5 "Bypass" H 2350 5500 50  0001 C CNN "notes"
 	1    2350 5500
 	-1   0    0    1   
 $EndComp
@@ -1200,10 +1174,11 @@ L Device:C_Small C3
 U 1 1 60AB9CED
 P 1250 4600
 F 0 "C3" V 1050 4600 50  0000 C CNN
-F 1 "0.47uF" V 1125 4600 50  0000 C CNN
+F 1 "1uF" V 1125 4600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 4450 50  0001 C CNN
 F 3 "~" H 1250 4600 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 1250 4600 50  0001 C CNN "mpn"
+F 5 "Audio" H 1250 4600 50  0001 C CNN "notes"
 	1    1250 4600
 	0    -1   -1   0   
 $EndComp
@@ -1212,10 +1187,11 @@ L Device:C_Small C1
 U 1 1 60AB8421
 P 1250 4300
 F 0 "C1" V 1050 4300 50  0000 C CNN
-F 1 "0.47uF" V 1125 4300 50  0000 C CNN
+F 1 "1uF" V 1125 4300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 4150 50  0001 C CNN
 F 3 "~" H 1250 4300 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 1250 4300 50  0001 C CNN "mpn"
+F 5 "Audio" H 1250 4300 50  0001 C CNN "notes"
 	1    1250 4300
 	0    1    1    0   
 $EndComp
@@ -1253,8 +1229,8 @@ Wire Wire Line
 	3100 5050 2850 5050
 Wire Wire Line
 	2850 5050 2850 4950
-Text Notes 2750 3625 0    50   ~ 0
-Fixed internal gain: 6dB
+Text Notes 1275 3675 0    50   ~ 0
+Fixed internal gain: 6dB\nInput HPF @ 16 Hz
 $Comp
 L power:+5V #PWR0112
 U 1 1 60AE50FB
@@ -1271,10 +1247,11 @@ L Device:LED_ALT D4
 U 1 1 60DF7BEF
 P 8300 1325
 F 0 "D4" V 8275 1250 50  0000 R CNN
-F 1 "Blue" V 8350 1250 50  0000 R CNN
+F 1 "Green" V 8350 1250 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8300 1325 50  0001 C CNN
 F 3 "~" H 8300 1325 50  0001 C CNN
-F 4 "APT2012VBC/D" V 8300 1325 50  0001 C CNN "mpn"
+F 4 "APT2012ZGC/G, APT2012ZGC/E, APHCM2012ZGC/G-F01, APHCM2012ZGCK-F01" V 8300 1325 50  0001 C CNN "mpn"
+F 5 "" H 8300 1325 50  0001 C CNN "notes"
 	1    8300 1325
 	0    1    1    0   
 $EndComp
@@ -1327,10 +1304,11 @@ L Device:C_Small C16
 U 1 1 60E0D2B0
 P 6050 5775
 F 0 "C16" H 6165 5821 50  0000 L CNN
-F 1 "100nF" H 6165 5730 50  0000 L CNN
+F 1 "0.1uF" H 6165 5730 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 5625 50  0001 C CNN
 F 3 "~" H 6050 5775 50  0001 C CNN
-F 4 "GRT188C8YA105KE13D" H 6050 5775 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF, GRM188R61E106KA73D" H 6050 5775 50  0001 C CNN "mpn"
+F 5 "LPF" H 6050 5775 50  0001 C CNN "notes"
 	1    6050 5775
 	1    0    0    -1  
 $EndComp
@@ -1356,7 +1334,7 @@ Text GLabel 5250 5575 0    50   Input ~ 0
 JACK_SENSE
 Wire Wire Line
 	5250 5575 5450 5575
-Text GLabel 4725 5475 0    50   Input ~ 0
+Text GLabel 4675 5475 0    50   Input ~ 0
 SWITCHED_L
 Text GLabel 4725 5475 2    50   Input ~ 0
 JACK_SENSE
@@ -1396,37 +1374,7 @@ F 3 "" H 6675 5475 50  0001 C CNN
 	1    6675 5475
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R16
-U 1 1 60E34E2A
-P 7325 5425
-F 0 "R16" V 7225 5425 50  0000 C CNN
-F 1 "0" V 7400 5425 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7365 5415 50  0001 C CNN
-F 3 "~" H 7325 5425 50  0001 C CNN
-F 4 "DNP" H 7325 5425 50  0001 C CNN "mpn"
-	1    7325 5425
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7450 5575 7325 5575
-Wire Wire Line
-	7325 5575 6925 5575
-Connection ~ 7325 5575
-$Comp
-L power:+5V #PWR0127
-U 1 1 60E3BE85
-P 7325 5275
-F 0 "#PWR0127" H 7325 5125 50  0001 C CNN
-F 1 "+5V" H 7340 5448 50  0000 C CNN
-F 2 "" H 7325 5275 50  0001 C CNN
-F 3 "" H 7325 5275 50  0001 C CNN
-	1    7325 5275
-	1    0    0    -1  
-$EndComp
-Text Notes 7375 5350 0    50   ~ 0
-Place to\ndisable sense
-Text Notes 6075 2525 0    79   ~ 16
+Text Notes 6075 2500 0    79   ~ 16
 Speaker amplifier
 Text Notes 1250 3475 0    79   ~ 16
 Headphone amp & line driver
@@ -1522,6 +1470,7 @@ F 1 "1uF" H 7040 3830 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6963 3725 50  0001 C CNN
 F 3 "~" H 6925 3875 50  0001 C CNN
 F 4 "GRT188C8YA105KE13D" H 6925 3875 50  0001 C CNN "mpn"
+F 5 "Bypass" H 6925 3875 50  0001 C CNN "notes"
 	1    6925 3875
 	1    0    0    -1  
 $EndComp
@@ -1541,30 +1490,29 @@ F 3 "" H 7050 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5550 3950 5675 3950
-Wire Wire Line
-	5550 3600 5550 3950
-Wire Wire Line
-	5675 3950 5775 3950
-Wire Wire Line
-	5775 3950 5775 3850
-Connection ~ 5675 3950
-Wire Wire Line
 	6100 2950 6150 2950
 Wire Wire Line
 	6150 3150 6100 3150
-Wire Wire Line
-	5775 3150 5900 3150
-Wire Wire Line
-	5550 2950 5900 2950
-Text Notes 7950 2675 0    50   ~ 0
-Fixed internal gain\nB: 6dB\nC: 9dB\nD: 12dB
-Text Notes 4925 5825 0    50   ~ 0
-Corner frequency @ 15 Hz
-Text Notes 6925 5950 0    50   ~ 10
-TODO: Check package/pinout
+Text Notes 7825 2850 0    50   ~ 0
+Fixed internal gain for\ndifferent variants:\nB: 6dB\nC: 9dB\nD: 12dB\n\nB variant used for v6
+Text Notes 5425 5800 0    50   ~ 0
+LPF @ 15 Hz
 Text Notes 9975 6400 0    50   ~ 0
 SJ-63083D
 Text Notes 9950 5550 0    50   ~ 0
 CDS-40288
+Text Notes 4575 4625 0    50   ~ 0
+Note: R7 & R9 aren't needed by the speaker amp\n(per the datasheet) but without them, the headphone\namp heads up very very quickly. 10k seems to be\nenough to keep it from fighting, but maybe consider\na summing amp here?\nTODO: Try out 9db & 12db version.
+Wire Wire Line
+	4675 5475 4725 5475
+Text Notes 7225 2000 0    50   ~ 0
+A little dim in v6,\ntry lowering R8?
+Wire Wire Line
+	5475 3150 5900 3150
+Wire Wire Line
+	5475 2950 5900 2950
+Text Notes 5000 3325 0    50   ~ 0
+Input HPF @ 16 Hz
+Wire Wire Line
+	6925 5575 7450 5575
 $EndSCHEMATC
