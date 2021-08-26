@@ -34,6 +34,7 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3913 6900 50  
 F 3 "~" H 3875 7050 50  0001 C CNN
 F 4 "GRM32 series, low esr, 10-47uF, 16V+, pref 25V+" H 3875 7050 50  0001 C CNN "notes"
 F 5 "GRM21BR61E226ME44K, CL21A226KOQNNNE (16V)" H 3875 7050 50  0001 C CNN "mpn"
+F 6 "1" H 3875 7050 50  0001 C CNN "populate"
 	1    3875 7050
 	1    0    0    -1  
 $EndComp
@@ -47,6 +48,7 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5863 6900 50  
 F 3 "~" H 5825 7050 50  0001 C CNN
 F 4 "GRM32 series, low esr, 10-47uF, 16V+, keep as low as possible" H 5825 7050 50  0001 C CNN "notes"
 F 5 "GRM21BR61E226ME44K, CL21A226KOQNNNE (16V)" H 5825 7050 50  0001 C CNN "mpn"
+F 6 "1" H 5825 7050 50  0001 C CNN "populate"
 	1    5825 7050
 	1    0    0    -1  
 $EndComp
@@ -87,6 +89,7 @@ F 1 "TL074" H 2525 1700 50  0000 L CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2475 1925 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tl071.pdf" H 2525 1725 50  0001 C CNN
 F 4 "TL074CPW" H 2475 1825 50  0001 C CNN "mpn"
+F 5 "1" H 2475 1525 50  0001 C CNN "populate"
 	1    2475 1525
 	1    0    0    1   
 $EndComp
@@ -99,6 +102,7 @@ F 1 "30k" V 2550 1325 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 1165 50  0001 C CNN
 F 3 "~" H 2475 1175 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 1175 50  0001 C CNN "mpn"
+F 5 "1" H 2475 1175 50  0001 C CNN "populate"
 	1    2475 1175
 	0    1    1    0   
 $EndComp
@@ -111,6 +115,7 @@ F 1 "100k" V 1636 1425 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1790 1415 50  0001 C CNN
 F 3 "~" H 1750 1425 50  0001 C CNN
 F 4 "ERA-3AED104V" H 1750 1425 50  0001 C CNN "mpn"
+F 5 "1" H 1750 1425 50  0001 C CNN "populate"
 	1    1750 1425
 	0    1    1    0   
 $EndComp
@@ -174,6 +179,7 @@ F 1 "TL074" H 7350 1325 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7175 1275 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tl071.pdf" H 7275 1375 50  0001 C CNN
 F 4 "TL074CPW" H 7225 1175 50  0001 C CNN "mpn"
+F 5 "1" H 7225 1175 50  0001 C CNN "populate"
 	4    7225 1175
 	1    0    0    -1  
 $EndComp
@@ -187,6 +193,7 @@ F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7750 1325 50  0001
 F 3 "~" H 7750 1325 50  0001 C CNN
 F 4 "APT2012VBC/D" V 7750 1325 50  0001 C CNN "mpn"
 F 5 "" H 7750 1325 50  0001 C CNN "notes"
+F 6 "1" H 7750 1325 50  0001 C CNN "populate"
 	1    7750 1325
 	0    -1   -1   0   
 $EndComp
@@ -209,8 +216,9 @@ F 0 "R8" H 6857 1779 50  0000 R CNN
 F 1 "270" H 6857 1870 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6965 1815 50  0001 C CNN
 F 3 "~" H 6925 1825 50  0001 C CNN
-F 4 "TODO" H 6925 1825 50  0001 C CNN "mpn"
+F 4 "ERA-3AED271V" H 6925 1825 50  0001 C CNN "mpn"
 F 5 "" H 6925 1825 50  0001 C CNN "notes"
+F 6 "1" H 6925 1825 50  0001 C CNN "populate"
 	1    6925 1825
 	-1   0    0    1   
 $EndComp
@@ -229,6 +237,7 @@ F 1 "TL074" H 9225 1350 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 9500 1475 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tl071.pdf" H 9600 1575 50  0001 C CNN
 F 4 "TL074CPW" H 9550 1375 50  0001 C CNN "mpn"
+F 5 "1" H 9550 1375 50  0001 C CNN "populate"
 	5    9550 1375
 	1    0    0    -1  
 $EndComp
@@ -319,6 +328,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1175 50  
 F 3 "~" H 9950 1175 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 9950 1175 50  0001 C CNN "mpn"
 F 5 "Bypass" H 9950 1175 50  0001 C CNN "notes"
+F 6 "1" H 9950 1175 50  0001 C CNN "populate"
 	1    9950 1175
 	1    0    0    -1  
 $EndComp
@@ -332,6 +342,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1575 50  
 F 3 "~" H 9950 1575 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 9950 1575 50  0001 C CNN "mpn"
 F 5 "Bypass" H 9950 1575 50  0001 C CNN "notes"
+F 6 "1" H 9950 1575 50  0001 C CNN "populate"
 	1    9950 1575
 	1    0    0    -1  
 $EndComp
@@ -378,6 +389,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8263 4125 50  
 F 3 "~" H 8225 4275 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 8225 4275 50  0001 C CNN "mpn"
 F 5 "Bypass" H 8225 4275 50  0001 C CNN "notes"
+F 6 "1" H 8225 4275 50  0001 C CNN "populate"
 	1    8225 4275
 	-1   0    0    1   
 $EndComp
@@ -413,6 +425,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7838 4125 50  
 F 3 "~" H 7800 4275 50  0001 C CNN
 F 4 "GRM188R61C106MAALD" H 7800 4275 50  0001 C CNN "mpn"
 F 5 "Bypass" H 7800 4275 50  0001 C CNN "notes"
+F 6 "1" H 7800 4275 50  0001 C CNN "populate"
 	1    7800 4275
 	-1   0    0    1   
 $EndComp
@@ -437,6 +450,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 2800 50  
 F 3 "~" H 6000 2950 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6000 2950 50  0001 C CNN "mpn"
 F 5 "Audio" H 6000 2950 50  0001 C CNN "notes"
+F 6 "1" H 6000 2950 50  0001 C CNN "populate"
 	1    6000 2950
 	0    1    1    0   
 $EndComp
@@ -450,6 +464,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 3000 50  
 F 3 "~" H 6000 3150 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6000 3150 50  0001 C CNN "mpn"
 F 5 "Audio" H 6000 3150 50  0001 C CNN "notes"
+F 6 "1" H 6000 3150 50  0001 C CNN "populate"
 	1    6000 3150
 	0    -1   -1   0   
 $EndComp
@@ -462,6 +477,7 @@ F 1 "10k" V 6200 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6340 2940 50  0001 C CNN
 F 3 "~" H 6300 2950 50  0001 C CNN
 F 4 "RG1608P-103-D-T5, MCT06030D1002DP500" H 6300 2950 50  0001 C CNN "mpn"
+F 5 "1" H 6300 2950 50  0001 C CNN "populate"
 	1    6300 2950
 	0    1    1    0   
 $EndComp
@@ -474,6 +490,7 @@ F 1 "10k" V 6450 3150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6340 3140 50  0001 C CNN
 F 3 "~" H 6300 3150 50  0001 C CNN
 F 4 "RG1608P-103-D-T5, MCT06030D1002DP500" H 6300 3150 50  0001 C CNN "mpn"
+F 5 "1" H 6300 3150 50  0001 C CNN "populate"
 	1    6300 3150
 	0    1    1    0   
 $EndComp
@@ -495,6 +512,7 @@ F 1 "TL074" H 2600 2850 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2425 2775 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tl071.pdf" H 2525 2875 50  0001 C CNN
 F 4 "TL074CPW" H 2475 2675 50  0001 C CNN "mpn"
+F 5 "1" H 2475 2675 50  0001 C CNN "populate"
 	2    2475 2675
 	1    0    0    1   
 $EndComp
@@ -507,6 +525,7 @@ F 1 "30k" V 2525 2475 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 2315 50  0001 C CNN
 F 3 "~" H 2475 2325 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 2325 50  0001 C CNN "mpn"
+F 5 "1" H 2475 2325 50  0001 C CNN "populate"
 	1    2475 2325
 	0    1    1    0   
 $EndComp
@@ -519,6 +538,7 @@ F 1 "100k" V 1636 2575 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1790 2565 50  0001 C CNN
 F 3 "~" H 1750 2575 50  0001 C CNN
 F 4 "ERA-3AED104V" H 1750 2575 50  0001 C CNN "mpn"
+F 5 "1" H 1750 2575 50  0001 C CNN "populate"
 	1    1750 2575
 	0    1    1    0   
 $EndComp
@@ -661,6 +681,7 @@ F 2 "Diode_SMD:D_SOD-123" H 2175 6825 50  0001 C CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/ss26fl-d.pdf" H 2175 7000 50  0001 C CNN
 F 4 "SS24FL, FSV360FP" H 2175 7000 50  0001 C CNN "mpn"
 F 5 "2A" H 2175 7000 50  0001 C CNN "notes"
+F 6 "1" H 2175 7000 50  0001 C CNN "populate"
 	1    2175 7000
 	1    0    0    -1  
 $EndComp
@@ -674,6 +695,7 @@ F 2 "Diode_SMD:D_SOD-123" H 2175 7225 50  0001 C CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/ss26fl-d.pdf" H 2175 7400 50  0001 C CNN
 F 4 "SS24FL, FSV360FP" H 2175 7400 50  0001 C CNN "mpn"
 F 5 "2A" H 2175 7400 50  0001 C CNN "notes"
+F 6 "1" H 2175 7400 50  0001 C CNN "populate"
 	1    2175 7400
 	-1   0    0    1   
 $EndComp
@@ -781,7 +803,7 @@ F 3 "" H 9675 6400 50  0001 C CNN
 $EndComp
 Text GLabel 9675 6300 0    50   Input ~ 0
 HEADPHONE_R
-Text Notes 7250 2075 0    50   ~ 0
+Text Notes 7375 2175 0    50   ~ 0
 Rated:\nVf = 3.3V\nIf(nom) = 20mA, If(max) = 30mA\n\nCalculated:\n8V(rms) / 270 Ohm = 30mA(rms)
 $Comp
 L Device:Ferrite_Bead_Small FB2
@@ -792,6 +814,7 @@ F 1 "1A" V 2800 7400 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2530 7400 50  0001 C CNN
 F 3 "~" H 2600 7400 50  0001 C CNN
 F 4 "742792651" H 2600 7400 50  0001 C CNN "mpn"
+F 5 "1" H 2600 7400 50  0001 C CNN "populate"
 	1    2600 7400
 	0    1    1    0   
 $EndComp
@@ -804,6 +827,7 @@ F 1 "1A" V 2454 7000 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2530 7000 50  0001 C CNN
 F 3 "~" H 2600 7000 50  0001 C CNN
 F 4 "742792651" H 2600 7000 50  0001 C CNN "mpn"
+F 5 "1" H 2600 7000 50  0001 C CNN "populate"
 	1    2600 7000
 	0    1    1    0   
 $EndComp
@@ -816,6 +840,7 @@ F 1 "V78E05-500-SMT-TR" H 4850 7726 50  0000 C CNN
 F 2 "board:CONV_V78E05-500-SMT-TR" H 4850 7250 50  0001 L BNN
 F 3 "" H 4850 7250 50  0001 L BNN
 F 4 "V78E05-500-SMT" H 4850 7250 50  0001 C CNN "mpn"
+F 5 "1" H 4850 7250 50  0001 C CNN "populate"
 	1    4850 7250
 	1    0    0    -1  
 $EndComp
@@ -874,10 +899,11 @@ L board:MAX97220 U1
 U 1 1 60A7C771
 P 2250 4700
 F 0 "U1" H 2600 4150 50  0000 C CNN
-F 1 "MAX97220" H 2625 5250 50  0000 C CNN
+F 1 "MAX97220C" H 2625 5250 50  0000 C CNN
 F 2 "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm_ThermalVias" H 2250 5700 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/256/MAX97220A-MAX97220E-5002.pdf" H 1950 5250 50  0001 C CNN
 F 4 "MAX97220C, MAX97220D" H 2250 4700 50  0001 C CNN "mpn"
+F 5 "1" H 2250 4700 50  0001 C CNN "populate"
 	1    2250 4700
 	1    0    0    -1  
 $EndComp
@@ -895,6 +921,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3138 4800 50  
 F 3 "~" H 3100 4950 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 3100 4950 50  0001 C CNN "mpn"
 F 5 "Bypass" H 3100 4950 50  0001 C CNN "notes"
+F 6 "1" H 3100 4950 50  0001 C CNN "populate"
 	1    3100 4950
 	1    0    0    -1  
 $EndComp
@@ -943,6 +970,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 5550 50  
 F 3 "~" H 2950 5700 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 2950 5700 50  0001 C CNN "mpn"
 F 5 "Bypass" H 2950 5700 50  0001 C CNN "notes"
+F 6 "1" H 2950 5700 50  0001 C CNN "populate"
 	1    2950 5700
 	-1   0    0    1   
 $EndComp
@@ -980,6 +1008,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3388 5550 50  
 F 3 "~" H 3350 5700 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 3350 5700 50  0001 C CNN "mpn"
 F 5 "Bypass" H 3350 5700 50  0001 C CNN "notes"
+F 6 "1" H 3350 5700 50  0001 C CNN "populate"
 	1    3350 5700
 	-1   0    0    1   
 $EndComp
@@ -1006,6 +1035,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 5250 50  
 F 3 "~" H 2250 5400 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 2250 5400 50  0001 C CNN "mpn"
 F 5 "Bypass" H 2250 5400 50  0001 C CNN "notes"
+F 6 "1" H 2250 5400 50  0001 C CNN "populate"
 	1    2250 5400
 	-1   0    0    1   
 $EndComp
@@ -1019,6 +1049,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2388 5350 50  
 F 3 "~" H 2350 5500 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 2350 5500 50  0001 C CNN "mpn"
 F 5 "Bypass" H 2350 5500 50  0001 C CNN "notes"
+F 6 "1" H 2350 5500 50  0001 C CNN "populate"
 	1    2350 5500
 	-1   0    0    1   
 $EndComp
@@ -1066,6 +1097,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 4450 50  
 F 3 "~" H 1250 4600 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 1250 4600 50  0001 C CNN "mpn"
 F 5 "Audio" H 1250 4600 50  0001 C CNN "notes"
+F 6 "1" H 1250 4600 50  0001 C CNN "populate"
 	1    1250 4600
 	0    -1   -1   0   
 $EndComp
@@ -1079,6 +1111,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 4150 50  
 F 3 "~" H 1250 4300 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 1250 4300 50  0001 C CNN "mpn"
 F 5 "Audio" H 1250 4300 50  0001 C CNN "notes"
+F 6 "1" H 1250 4300 50  0001 C CNN "populate"
 	1    1250 4300
 	0    1    1    0   
 $EndComp
@@ -1116,7 +1149,7 @@ Wire Wire Line
 	3100 5050 2850 5050
 Wire Wire Line
 	2850 5050 2850 4950
-Text Notes 600  3775 0    50   ~ 0
+Text Notes 650  6175 0    50   ~ 0
 Fixed internal gain: 6dB\nInput HPF @ 16 Hz\nVin(max) = 7.5V(pkpk), -3.75V to +3.75V
 $Comp
 L power:+5V #PWR0112
@@ -1139,6 +1172,7 @@ F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8300 1325 50  0001
 F 3 "~" H 8300 1325 50  0001 C CNN
 F 4 "APT2012VBC/D" V 8300 1325 50  0001 C CNN "mpn"
 F 5 "" H 8300 1325 50  0001 C CNN "notes"
+F 6 "1" H 8300 1325 50  0001 C CNN "populate"
 	1    8300 1325
 	0    1    1    0   
 $EndComp
@@ -1157,6 +1191,7 @@ F 1 "100k" V 5525 5425 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5490 5415 50  0001 C CNN
 F 3 "~" H 5450 5425 50  0001 C CNN
 F 4 "ERA-3AED104V" H 5450 5425 50  0001 C CNN "mpn"
+F 5 "1" H 5450 5425 50  0001 C CNN "populate"
 	1    5450 5425
 	-1   0    0    1   
 $EndComp
@@ -1180,6 +1215,7 @@ F 1 "100k" V 5850 5575 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5815 5565 50  0001 C CNN
 F 3 "~" H 5775 5575 50  0001 C CNN
 F 4 "ERA-3AED104V" H 5775 5575 50  0001 C CNN "mpn"
+F 5 "1" H 5775 5575 50  0001 C CNN "populate"
 	1    5775 5575
 	0    -1   -1   0   
 $EndComp
@@ -1196,6 +1232,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 5625 50  
 F 3 "~" H 6050 5775 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 6050 5775 50  0001 C CNN "mpn"
 F 5 "LPF" H 6050 5775 50  0001 C CNN "notes"
+F 6 "1" H 6050 5775 50  0001 C CNN "populate"
 	1    6050 5775
 	1    0    0    -1  
 $EndComp
@@ -1234,6 +1271,7 @@ F 1 "74LVC1G04" H 6950 5450 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6675 5575 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 6675 5575 50  0001 C CNN
 F 4 "SN74LVC1G04DBV" H 6675 5575 50  0001 C CNN "mpn"
+F 5 "1" H 6675 5575 50  0001 C CNN "populate"
 	1    6675 5575
 	1    0    0    -1  
 $EndComp
@@ -1298,11 +1336,12 @@ L winterbloom:MAX9717B_C_D U4
 U 1 1 60EB0610
 P 7450 3350
 F 0 "U4" H 7200 3725 50  0000 C CNN
-F 1 "MAX9717B_C_D" H 7800 3725 50  0000 C CNN
+F 1 "MAX9717B" H 7800 3725 50  0000 C CNN
 F 2 "winterbloom:MAX9717B" H 7450 3350 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX9716-MAX9717.pdf" H 7450 3350 50  0001 C CNN
 F 4 "MAX9717B" H 7450 3350 50  0001 C CNN "mpn"
 F 5 "Can use C/D, but gain is higher" H 7450 3350 50  0001 C CNN "notes"
+F 6 "1" H 7450 3350 50  0001 C CNN "populate"
 	1    7450 3350
 	1    0    0    -1  
 $EndComp
@@ -1352,6 +1391,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6963 3725 50  
 F 3 "~" H 6925 3875 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6925 3875 50  0001 C CNN "mpn"
 F 5 "Bypass" H 6925 3875 50  0001 C CNN "notes"
+F 6 "1" H 6925 3875 50  0001 C CNN "populate"
 	1    6925 3875
 	1    0    0    -1  
 $EndComp
@@ -1374,8 +1414,8 @@ Wire Wire Line
 	6100 2950 6150 2950
 Wire Wire Line
 	6150 3150 6100 3150
-Text Notes 7825 2850 0    50   ~ 0
-Fixed internal gain for\ndifferent variants:\nB: 6dB\nC: 9dB\nD: 12dB\n\nB variant used for v6
+Text Notes 4575 4450 0    50   ~ 0
+Fixed internal gain: 6dB
 Text Notes 5425 5800 0    50   ~ 0
 LPF @ 15 Hz
 Text Notes 9975 6400 0    50   ~ 0
@@ -1412,6 +1452,7 @@ F 1 "10k" V 5936 1550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6090 1540 50  0001 C CNN
 F 3 "~" H 6050 1550 50  0001 C CNN
 F 4 "RG1608P-103-D-T5, MCT06030D1002DP500" H 6050 1550 50  0001 C CNN "mpn"
+F 5 "1" H 6050 1550 50  0001 C CNN "populate"
 	1    6050 1550
 	0    -1   -1   0   
 $EndComp
@@ -1441,6 +1482,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5465 1265 50  0
 F 3 "~" H 5425 1275 50  0001 C CNN
 F 4 "ERA-3AEB102V, TNPW06031K00FHEA, RN73R1JTTD1001D25" H 5425 1275 50  0001 C CNN "mpn"
 F 5 "" H 5425 1275 50  0001 C CNN "notes"
+F 6 "1" H 5425 1275 50  0001 C CNN "populate"
 	1    5425 1275
 	0    1    1    0   
 $EndComp
@@ -1454,6 +1496,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5465 1490 50  0
 F 3 "~" H 5425 1500 50  0001 C CNN
 F 4 "ERA-3AEB102V, TNPW06031K00FHEA, RN73R1JTTD1001D25" H 5425 1500 50  0001 C CNN "mpn"
 F 5 "" H 5425 1500 50  0001 C CNN "notes"
+F 6 "1" H 5425 1500 50  0001 C CNN "populate"
 	1    5425 1500
 	0    -1   -1   0   
 $EndComp
@@ -1470,6 +1513,7 @@ F 1 "TL074" H 6150 1325 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5975 1275 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tl071.pdf" H 6075 1375 50  0001 C CNN
 F 4 "TL074CPW" H 6025 1175 50  0001 C CNN "mpn"
+F 5 "1" H 6025 1175 50  0001 C CNN "populate"
 	3    6025 1175
 	1    0    0    -1  
 $EndComp
@@ -1486,7 +1530,7 @@ Wire Wire Line
 	5650 1075 5725 1075
 Wire Wire Line
 	775  1900 775  2850
-Text Notes 5175 1975 0    50   ~ 0
+Text Notes 4575 2175 0    50   ~ 0
 Gain = -10\nSaturation @ Vin = ±110mV
 Text Notes 1250 3475 0    79   ~ 16
 Headphone amp & line driver
@@ -1500,6 +1544,7 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3240 4190 50  0
 F 3 "~" H 3200 4200 50  0001 C CNN
 F 4 "ERA-6AHD270V, RT0805DRE0727RL" H 3200 4200 50  0001 C CNN "mpn"
 F 5 "125mW, audio path" H 3200 4200 50  0001 C CNN "notes"
+F 6 "1" H 3200 4200 50  0001 C CNN "populate"
 	1    3200 4200
 	0    1    1    0   
 $EndComp
@@ -1513,6 +1558,7 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3240 4290 50  0
 F 3 "~" H 3200 4300 50  0001 C CNN
 F 4 "ERA-6AHD270V, RT0805DRE0727RL" H 3200 4300 50  0001 C CNN "mpn"
 F 5 "125mW, audio path" H 3200 4300 50  0001 C CNN "notes"
+F 6 "1" H 3200 4300 50  0001 C CNN "populate"
 	1    3200 4300
 	0    1    1    0   
 $EndComp
@@ -1526,18 +1572,17 @@ Wire Wire Line
 	3050 4300 3050 4550
 Wire Wire Line
 	3050 4550 2850 4550
-Text Notes 5925 1625 0    50   ~ 0
-TODO: Move this on the layout to the other side of the op amp
 $Comp
 L Device:C_Small C18
 U 1 1 61301851
 P 2475 1050
 F 0 "C18" V 2425 925 50  0000 C CNN
-F 1 "TODO" V 2425 1200 50  0000 C CNN
+F 1 "22pF" V 2425 1200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2513 900 50  0001 C CNN
 F 3 "~" H 2475 1050 50  0001 C CNN
-F 4 "" H 2475 1050 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-22pF" H 2475 1050 50  0001 C CNN "mpn"
 F 5 "Audio" H 2475 1050 50  0001 C CNN "notes"
+F 6 "1" H 2475 1050 50  0001 C CNN "populate"
 	1    2475 1050
 	0    1    1    0   
 $EndComp
@@ -1558,11 +1603,12 @@ L Device:C_Small C19
 U 1 1 61309EEA
 P 2475 2200
 F 0 "C19" V 2425 2075 50  0000 C CNN
-F 1 "TODO" V 2425 2350 50  0000 C CNN
+F 1 "22pF" V 2425 2350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2513 2050 50  0001 C CNN
 F 3 "~" H 2475 2200 50  0001 C CNN
-F 4 "" H 2475 2200 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-22pF" H 2475 2200 50  0001 C CNN "mpn"
 F 5 "Audio" H 2475 2200 50  0001 C CNN "notes"
+F 6 "1" H 2475 2200 50  0001 C CNN "populate"
 	1    2475 2200
 	0    1    1    0   
 $EndComp
@@ -1580,4 +1626,6 @@ Wire Notes Line
 	3950 6250 3950 4700
 Wire Notes Line
 	8750 4700 3950 4700
+Text Notes 650  3225 0    50   ~ 0
+Input LPF @ 241 kHz
 $EndSCHEMATC
