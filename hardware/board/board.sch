@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Speak to Me / Breathe"
-Date "2021-08-19"
-Rev "v7"
+Date "2021-08-25"
+Rev "v8"
 Comp "Winterbloom"
 Comment1 "CERN-OHL-P v2"
 Comment2 "Alethea Flowers"
@@ -94,8 +94,8 @@ $Comp
 L Device:R_US R6
 U 1 1 5F965819
 P 2475 1175
-F 0 "R6" V 2400 1175 50  0000 C CNN
-F 1 "30k" V 2575 1175 50  0000 C CNN
+F 0 "R6" V 2550 1050 50  0000 C CNN
+F 1 "30k" V 2550 1325 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 1165 50  0001 C CNN
 F 3 "~" H 2475 1175 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 1175 50  0001 C CNN "mpn"
@@ -127,8 +127,6 @@ Wire Wire Line
 	2050 1425 1900 1425
 Wire Wire Line
 	2625 1175 2850 1175
-Wire Wire Line
-	2850 1175 2850 1525
 $Comp
 L power:GND #PWR0114
 U 1 1 5F96F6FC
@@ -140,8 +138,8 @@ F 3 "" H 2175 1625 50  0001 C CNN
 	1    2175 1625
 	1    0    0    -1  
 $EndComp
-Text Notes 625  925  0    50   ~ 0
-Gain: -0.3\nAssuming max input of 12v pkpk\nMax output 3.6v pkpk
+Text Notes 3325 1375 0    50   ~ 0
+Gain: -0.3\n\nNominal:\nVin = 12V(pkpk), 8.5V(rms)\nVout = 3.6V(pkpk), 2.5V(rms)\n\nMax:\nVin = 20V(pkpk), 14V(rms)\nVout = 6V(pkpk), 4.2V(rms)
 $Comp
 L power:GND #PWR0115
 U 1 1 5F975148
@@ -208,10 +206,10 @@ L Device:R_US R8
 U 1 1 5F984AC5
 P 6925 1825
 F 0 "R8" H 6857 1779 50  0000 R CNN
-F 1 "1k" H 6857 1870 50  0000 R CNN
+F 1 "270" H 6857 1870 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6965 1815 50  0001 C CNN
 F 3 "~" H 6925 1825 50  0001 C CNN
-F 4 "ERA-3AEB102V, TNPW06031K00FHEA, RN73R1JTTD1001D25" H 6925 1825 50  0001 C CNN "mpn"
+F 4 "TODO" H 6925 1825 50  0001 C CNN "mpn"
 F 5 "" H 6925 1825 50  0001 C CNN "notes"
 	1    6925 1825
 	-1   0    0    1   
@@ -504,8 +502,8 @@ $Comp
 L Device:R_US R2
 U 1 1 60469E7B
 P 2475 2325
-F 0 "R2" V 2375 2325 50  0000 C CNN
-F 1 "30k" V 2575 2325 50  0000 C CNN
+F 0 "R2" V 2525 2200 50  0000 C CNN
+F 1 "30k" V 2525 2475 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 2315 50  0001 C CNN
 F 3 "~" H 2475 2325 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 2325 50  0001 C CNN "mpn"
@@ -783,8 +781,8 @@ F 3 "" H 9675 6400 50  0001 C CNN
 $EndComp
 Text GLabel 9675 6300 0    50   Input ~ 0
 HEADPHONE_R
-Text Notes 7575 1700 0    50   ~ 0
-R8 = 1k, If = 11mA \nR8 = 500, If = 20mA
+Text Notes 7250 2075 0    50   ~ 0
+Rated:\nVf = 3.3V\nIf(nom) = 20mA, If(max) = 30mA\n\nCalculated:\n8V(rms) / 270 Ohm = 30mA(rms)
 $Comp
 L Device:Ferrite_Bead_Small FB2
 U 1 1 606BC44E
@@ -883,9 +881,9 @@ F 4 "MAX97220C, MAX97220D" H 2250 4700 50  0001 C CNN "mpn"
 	1    2250 4700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2850 4450 2    50   Input ~ 0
+Text GLabel 3350 4200 2    50   Input ~ 0
 HEADPHONE_R
-Text GLabel 2850 4550 2    50   Input ~ 0
+Text GLabel 3350 4300 2    50   Input ~ 0
 HEADPHONE_L
 $Comp
 L Device:C_Small C8
@@ -1118,8 +1116,8 @@ Wire Wire Line
 	3100 5050 2850 5050
 Wire Wire Line
 	2850 5050 2850 4950
-Text Notes 1275 3675 0    50   ~ 0
-Fixed internal gain: 6dB\nInput HPF @ 16 Hz
+Text Notes 600  3775 0    50   ~ 0
+Fixed internal gain: 6dB\nInput HPF @ 16 Hz\nVin(max) = 7.5V(pkpk), -3.75V to +3.75V
 $Comp
 L power:+5V #PWR0112
 U 1 1 60AE50FB
@@ -1265,8 +1263,6 @@ F 3 "" H 6675 5475 50  0001 C CNN
 $EndComp
 Text Notes 6075 2500 0    79   ~ 16
 Speaker amplifier
-Text Notes 1250 3475 0    79   ~ 16
-Headphone amp & line driver
 Text Notes 2025 750  0    79   ~ 16
 Input attenuator
 Text Notes 6450 750  0    79   ~ 16
@@ -1279,8 +1275,6 @@ Wire Notes Line
 	6225 6250 6225 7975
 Wire Notes Line
 	6225 7975 575  7975
-Wire Notes Line
-	3725 6250 3725 3300
 Wire Notes Line
 	8450 4700 8450 6250
 Wire Notes Line
@@ -1295,8 +1289,6 @@ Wire Notes Line
 	575  575  8750 575 
 Wire Notes Line
 	4525 575  4525 4700
-Wire Notes Line
-	3725 4700 8750 4700
 Wire Notes Line
 	8750 575  8750 4700
 Text GLabel 7050 3500 0    50   Input ~ 0
@@ -1391,11 +1383,9 @@ SJ-63083D
 Text Notes 9950 5550 0    50   ~ 0
 CDS-40288
 Text Notes 4575 4625 0    50   ~ 0
-Note: R7 & R9 aren't needed by the speaker amp\n(per the datasheet) but without them, the headphone\namp heads up very very quickly. 10k seems to be\nenough to keep it from fighting, but maybe consider\na summing amp here?\nTODO: Try out 9db & 12db version.
+TODO: See if R7 & R9 can be eliminated now\nthat the headphone amp outputs are current limited
 Wire Wire Line
 	4675 5475 4725 5475
-Text Notes 7225 2000 0    50   ~ 0
-A little dim in v6,\ntry lowering R8?
 Wire Wire Line
 	5475 3150 5900 3150
 Wire Wire Line
@@ -1418,10 +1408,10 @@ L Device:R_US R12
 U 1 1 604C739D
 P 6050 1550
 F 0 "R12" V 5845 1550 50  0000 C CNN
-F 1 "100k" V 5936 1550 50  0000 C CNN
+F 1 "10k" V 5936 1550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6090 1540 50  0001 C CNN
 F 3 "~" H 6050 1550 50  0001 C CNN
-F 4 "ERA-3AED104V" H 6050 1550 50  0001 C CNN "mpn"
+F 4 "RG1608P-103-D-T5, MCT06030D1002DP500" H 6050 1550 50  0001 C CNN "mpn"
 	1    6050 1550
 	0    -1   -1   0   
 $EndComp
@@ -1496,4 +1486,98 @@ Wire Wire Line
 	5650 1075 5725 1075
 Wire Wire Line
 	775  1900 775  2850
+Text Notes 5175 1975 0    50   ~ 0
+Gain = -10\nSaturation @ Vin = ±110mV
+Text Notes 1250 3475 0    79   ~ 16
+Headphone amp & line driver
+$Comp
+L Device:R_US R3
+U 1 1 6125D67A
+P 3200 4200
+F 0 "R3" V 3100 4125 50  0000 C CNN
+F 1 "27" V 3100 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3240 4190 50  0001 C CNN
+F 3 "~" H 3200 4200 50  0001 C CNN
+F 4 "ERA-6AHD270V, RT0805DRE0727RL" H 3200 4200 50  0001 C CNN "mpn"
+F 5 "125mW, audio path" H 3200 4200 50  0001 C CNN "notes"
+	1    3200 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 6125DCDD
+P 3200 4300
+F 0 "R4" V 3300 4225 50  0000 C CNN
+F 1 "27" V 3300 4375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3240 4290 50  0001 C CNN
+F 3 "~" H 3200 4300 50  0001 C CNN
+F 4 "ERA-6AHD270V, RT0805DRE0727RL" H 3200 4300 50  0001 C CNN "mpn"
+F 5 "125mW, audio path" H 3200 4300 50  0001 C CNN "notes"
+	1    3200 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4450 2950 4450
+Wire Wire Line
+	2950 4450 2950 4200
+Wire Wire Line
+	2950 4200 3050 4200
+Wire Wire Line
+	3050 4300 3050 4550
+Wire Wire Line
+	3050 4550 2850 4550
+Text Notes 5925 1625 0    50   ~ 0
+TODO: Move this on the layout to the other side of the op amp
+$Comp
+L Device:C_Small C18
+U 1 1 61301851
+P 2475 1050
+F 0 "C18" V 2425 925 50  0000 C CNN
+F 1 "TODO" V 2425 1200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2513 900 50  0001 C CNN
+F 3 "~" H 2475 1050 50  0001 C CNN
+F 4 "" H 2475 1050 50  0001 C CNN "mpn"
+F 5 "Audio" H 2475 1050 50  0001 C CNN "notes"
+	1    2475 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 1175 2050 1050
+Wire Wire Line
+	2050 1050 2375 1050
+Connection ~ 2050 1175
+Wire Wire Line
+	2575 1050 2850 1050
+Wire Wire Line
+	2850 1050 2850 1175
+Connection ~ 2850 1175
+Wire Wire Line
+	2850 1175 2850 1525
+$Comp
+L Device:C_Small C19
+U 1 1 61309EEA
+P 2475 2200
+F 0 "C19" V 2425 2075 50  0000 C CNN
+F 1 "TODO" V 2425 2350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2513 2050 50  0001 C CNN
+F 3 "~" H 2475 2200 50  0001 C CNN
+F 4 "" H 2475 2200 50  0001 C CNN "mpn"
+F 5 "Audio" H 2475 2200 50  0001 C CNN "notes"
+	1    2475 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2575 2200 2850 2200
+Wire Wire Line
+	2850 2200 2850 2325
+Connection ~ 2850 2325
+Wire Wire Line
+	2375 2200 2050 2200
+Wire Wire Line
+	2050 2200 2050 2325
+Connection ~ 2050 2325
+Wire Notes Line
+	3950 6250 3950 4700
+Wire Notes Line
+	8750 4700 3950 4700
 $EndSCHEMATC
