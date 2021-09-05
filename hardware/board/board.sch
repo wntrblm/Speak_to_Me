@@ -32,7 +32,7 @@ F 0 "C2" H 3990 7096 50  0000 L CNN
 F 1 "22uF" H 3990 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3913 6900 50  0001 C CNN
 F 3 "~" H 3875 7050 50  0001 C CNN
-F 4 "GRM32 series, low esr, 10-47uF, 16V+, pref 25V+" H 3875 7050 50  0001 C CNN "notes"
+F 4 "Power supply filtering, Low esr, 10-47uF, 16V+, pref 25V+" H 3875 7050 50  0001 C CNN "notes"
 F 5 "GRM21BR61E226ME44K, CL21A226KOQNNNE (16V)" H 3875 7050 50  0001 C CNN "mpn"
 F 6 "1" H 3875 7050 50  0001 C CNN "populate"
 	1    3875 7050
@@ -46,7 +46,7 @@ F 0 "C4" H 5940 7096 50  0000 L CNN
 F 1 "22uF" H 5940 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5863 6900 50  0001 C CNN
 F 3 "~" H 5825 7050 50  0001 C CNN
-F 4 "GRM32 series, low esr, 10-47uF, 16V+, keep as low as possible" H 5825 7050 50  0001 C CNN "notes"
+F 4 "Power supply stability, Low esr, 10-22uF, 16V+" H 5825 7050 50  0001 C CNN "notes"
 F 5 "GRM21BR61E226ME44K, CL21A226KOQNNNE (16V)" H 5825 7050 50  0001 C CNN "mpn"
 F 6 "1" H 5825 7050 50  0001 C CNN "populate"
 	1    5825 7050
@@ -65,7 +65,7 @@ F 1 "Speaker" H 9945 5230 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9775 5125 50  0001 C CNN
 F 3 "~" H 9765 5275 50  0001 C CNN
 F 4 "B2B-XH-A" H 9775 5325 50  0001 C CNN "mpn"
-F 5 "Speaker: CDS-40288" H 9775 5325 50  0001 C CNN "notes"
+F 5 "Connects to speaker: CDS-40288" H 9775 5325 50  0001 C CNN "notes"
 	1    9775 5325
 	1    0    0    -1  
 $EndComp
@@ -103,6 +103,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 1165 50  0
 F 3 "~" H 2475 1175 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 1175 50  0001 C CNN "mpn"
 F 5 "1" H 2475 1175 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 2475 1175 50  0001 C CNN "notes"
 	1    2475 1175
 	0    1    1    0   
 $EndComp
@@ -116,6 +117,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1790 1415 50  0
 F 3 "~" H 1750 1425 50  0001 C CNN
 F 4 "ERA-3AED104V" H 1750 1425 50  0001 C CNN "mpn"
 F 5 "1" H 1750 1425 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 1750 1425 50  0001 C CNN "notes"
 	1    1750 1425
 	0    1    1    0   
 $EndComp
@@ -217,7 +219,7 @@ F 1 "270" H 6857 1870 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6965 1815 50  0001 C CNN
 F 3 "~" H 6925 1825 50  0001 C CNN
 F 4 "ERA-3AED271V" H 6925 1825 50  0001 C CNN "mpn"
-F 5 "" H 6925 1825 50  0001 C CNN "notes"
+F 5 "Current-limiting resistor, 100mW+" H 6925 1825 50  0001 C CNN "notes"
 F 6 "1" H 6925 1825 50  0001 C CNN "populate"
 	1    6925 1825
 	-1   0    0    1   
@@ -327,7 +329,7 @@ F 1 "0.1uF" H 10042 1130 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1175 50  0001 C CNN
 F 3 "~" H 9950 1175 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 9950 1175 50  0001 C CNN "mpn"
-F 5 "Bypass" H 9950 1175 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 9950 1175 50  0001 C CNN "notes"
 F 6 "1" H 9950 1175 50  0001 C CNN "populate"
 	1    9950 1175
 	1    0    0    -1  
@@ -341,7 +343,7 @@ F 1 "0.1uF" H 10042 1530 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1575 50  0001 C CNN
 F 3 "~" H 9950 1575 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 9950 1575 50  0001 C CNN "mpn"
-F 5 "Bypass" H 9950 1575 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 9950 1575 50  0001 C CNN "notes"
 F 6 "1" H 9950 1575 50  0001 C CNN "populate"
 	1    9950 1575
 	1    0    0    -1  
@@ -388,7 +390,7 @@ F 1 "0.1uF" H 8110 4320 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8263 4125 50  0001 C CNN
 F 3 "~" H 8225 4275 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 8225 4275 50  0001 C CNN "mpn"
-F 5 "Bypass" H 8225 4275 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 8225 4275 50  0001 C CNN "notes"
 F 6 "1" H 8225 4275 50  0001 C CNN "populate"
 	1    8225 4275
 	-1   0    0    1   
@@ -424,7 +426,7 @@ F 1 "10uF" H 7685 4320 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7838 4125 50  0001 C CNN
 F 3 "~" H 7800 4275 50  0001 C CNN
 F 4 "GRM188R61C106MAALD" H 7800 4275 50  0001 C CNN "mpn"
-F 5 "Bypass" H 7800 4275 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 7800 4275 50  0001 C CNN "notes"
 F 6 "1" H 7800 4275 50  0001 C CNN "populate"
 	1    7800 4275
 	-1   0    0    1   
@@ -449,7 +451,7 @@ F 1 "1uF" V 5839 2950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 2800 50  0001 C CNN
 F 3 "~" H 6000 2950 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6000 2950 50  0001 C CNN "mpn"
-F 5 "Audio" H 6000 2950 50  0001 C CNN "notes"
+F 5 "Audio, 16V+" H 6000 2950 50  0001 C CNN "notes"
 F 6 "1" H 6000 2950 50  0001 C CNN "populate"
 	1    6000 2950
 	0    1    1    0   
@@ -463,7 +465,7 @@ F 1 "1uF" V 5775 3150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 3000 50  0001 C CNN
 F 3 "~" H 6000 3150 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6000 3150 50  0001 C CNN "mpn"
-F 5 "Audio" H 6000 3150 50  0001 C CNN "notes"
+F 5 "Audio, 16V+" H 6000 3150 50  0001 C CNN "notes"
 F 6 "1" H 6000 3150 50  0001 C CNN "populate"
 	1    6000 3150
 	0    -1   -1   0   
@@ -478,6 +480,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6340 2940 50  0
 F 3 "~" H 6300 2950 50  0001 C CNN
 F 4 "RG1608P-103-D-T5, MCT06030D1002DP500" H 6300 2950 50  0001 C CNN "mpn"
 F 5 "1" H 6300 2950 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 6300 2950 50  0001 C CNN "notes"
 	1    6300 2950
 	0    1    1    0   
 $EndComp
@@ -491,6 +494,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6340 3140 50  0
 F 3 "~" H 6300 3150 50  0001 C CNN
 F 4 "RG1608P-103-D-T5, MCT06030D1002DP500" H 6300 3150 50  0001 C CNN "mpn"
 F 5 "1" H 6300 3150 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 6300 3150 50  0001 C CNN "notes"
 	1    6300 3150
 	0    1    1    0   
 $EndComp
@@ -526,6 +530,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2515 2315 50  0
 F 3 "~" H 2475 2325 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 2325 50  0001 C CNN "mpn"
 F 5 "1" H 2475 2325 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 2475 2325 50  0001 C CNN "notes"
 	1    2475 2325
 	0    1    1    0   
 $EndComp
@@ -539,6 +544,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1790 2565 50  0
 F 3 "~" H 1750 2575 50  0001 C CNN
 F 4 "ERA-3AED104V" H 1750 2575 50  0001 C CNN "mpn"
 F 5 "1" H 1750 2575 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 1750 2575 50  0001 C CNN "notes"
 	1    1750 2575
 	0    1    1    0   
 $EndComp
@@ -680,7 +686,7 @@ F 1 "SS24FL" H 2175 7150 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2175 6825 50  0001 C CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/ss26fl-d.pdf" H 2175 7000 50  0001 C CNN
 F 4 "SS24FL, FSV360FP" H 2175 7000 50  0001 C CNN "mpn"
-F 5 "2A" H 2175 7000 50  0001 C CNN "notes"
+F 5 "1A-2A Schottky" H 2175 7000 50  0001 C CNN "notes"
 F 6 "1" H 2175 7000 50  0001 C CNN "populate"
 	1    2175 7000
 	1    0    0    -1  
@@ -694,7 +700,7 @@ F 1 "SS24FL" H 2175 7600 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2175 7225 50  0001 C CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/ss26fl-d.pdf" H 2175 7400 50  0001 C CNN
 F 4 "SS24FL, FSV360FP" H 2175 7400 50  0001 C CNN "mpn"
-F 5 "2A" H 2175 7400 50  0001 C CNN "notes"
+F 5 "1A-2A Schottky" H 2175 7400 50  0001 C CNN "notes"
 F 6 "1" H 2175 7400 50  0001 C CNN "populate"
 	1    2175 7400
 	-1   0    0    1   
@@ -780,7 +786,7 @@ F 1 "Headphones" H 9955 6151 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 9875 6200 50  0001 C CNN
 F 3 "~" H 9875 6200 50  0001 C CNN
 F 4 "" H 9875 6200 50  0001 C CNN "mpn"
-F 5 "Jack: SJ-63083D" H 9875 6200 50  0001 C CNN "notes"
+F 5 "Connects to external breakout. Jack: SJ-63083D" H 9875 6200 50  0001 C CNN "notes"
 	1    9875 6200
 	1    0    0    -1  
 $EndComp
@@ -815,6 +821,7 @@ F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2530 7400 50  0
 F 3 "~" H 2600 7400 50  0001 C CNN
 F 4 "742792651" H 2600 7400 50  0001 C CNN "mpn"
 F 5 "1" H 2600 7400 50  0001 C CNN "populate"
+F 6 "1A" H 2600 7400 50  0001 C CNN "notes"
 	1    2600 7400
 	0    1    1    0   
 $EndComp
@@ -828,6 +835,7 @@ F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2530 7000 50  0
 F 3 "~" H 2600 7000 50  0001 C CNN
 F 4 "742792651" H 2600 7000 50  0001 C CNN "mpn"
 F 5 "1" H 2600 7000 50  0001 C CNN "populate"
+F 6 "1A" H 2600 7000 50  0001 C CNN "notes"
 	1    2600 7000
 	0    1    1    0   
 $EndComp
@@ -904,6 +912,7 @@ F 2 "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm_ThermalVias" H 2250 
 F 3 "https://www.mouser.com/datasheet/2/256/MAX97220A-MAX97220E-5002.pdf" H 1950 5250 50  0001 C CNN
 F 4 "MAX97220C, MAX97220D" H 2250 4700 50  0001 C CNN "mpn"
 F 5 "1" H 2250 4700 50  0001 C CNN "populate"
+F 6 "C or D variant only" H 2250 4700 50  0001 C CNN "notes"
 	1    2250 4700
 	1    0    0    -1  
 $EndComp
@@ -920,7 +929,7 @@ F 1 "1uF" H 3215 4905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3138 4800 50  0001 C CNN
 F 3 "~" H 3100 4950 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 3100 4950 50  0001 C CNN "mpn"
-F 5 "Bypass" H 3100 4950 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 3100 4950 50  0001 C CNN "notes"
 F 6 "1" H 3100 4950 50  0001 C CNN "populate"
 	1    3100 4950
 	1    0    0    -1  
@@ -969,7 +978,7 @@ F 1 "1uF" H 2835 5745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 5550 50  0001 C CNN
 F 3 "~" H 2950 5700 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 2950 5700 50  0001 C CNN "mpn"
-F 5 "Bypass" H 2950 5700 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 2950 5700 50  0001 C CNN "notes"
 F 6 "1" H 2950 5700 50  0001 C CNN "populate"
 	1    2950 5700
 	-1   0    0    1   
@@ -1007,7 +1016,7 @@ F 1 "1uF" H 3235 5745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3388 5550 50  0001 C CNN
 F 3 "~" H 3350 5700 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 3350 5700 50  0001 C CNN "mpn"
-F 5 "Bypass" H 3350 5700 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 3350 5700 50  0001 C CNN "notes"
 F 6 "1" H 3350 5700 50  0001 C CNN "populate"
 	1    3350 5700
 	-1   0    0    1   
@@ -1034,7 +1043,7 @@ F 1 "0.1uF" H 2675 5475 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 5250 50  0001 C CNN
 F 3 "~" H 2250 5400 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 2250 5400 50  0001 C CNN "mpn"
-F 5 "Bypass" H 2250 5400 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 2250 5400 50  0001 C CNN "notes"
 F 6 "1" H 2250 5400 50  0001 C CNN "populate"
 	1    2250 5400
 	-1   0    0    1   
@@ -1048,7 +1057,7 @@ F 1 "1uF" H 2225 5575 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2388 5350 50  0001 C CNN
 F 3 "~" H 2350 5500 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 2350 5500 50  0001 C CNN "mpn"
-F 5 "Bypass" H 2350 5500 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 2350 5500 50  0001 C CNN "notes"
 F 6 "1" H 2350 5500 50  0001 C CNN "populate"
 	1    2350 5500
 	-1   0    0    1   
@@ -1096,7 +1105,7 @@ F 1 "1uF" V 1125 4600 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 4450 50  0001 C CNN
 F 3 "~" H 1250 4600 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 1250 4600 50  0001 C CNN "mpn"
-F 5 "Audio" H 1250 4600 50  0001 C CNN "notes"
+F 5 "Audio, 16V+" H 1250 4600 50  0001 C CNN "notes"
 F 6 "1" H 1250 4600 50  0001 C CNN "populate"
 	1    1250 4600
 	0    -1   -1   0   
@@ -1110,7 +1119,7 @@ F 1 "1uF" V 1125 4300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1288 4150 50  0001 C CNN
 F 3 "~" H 1250 4300 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 1250 4300 50  0001 C CNN "mpn"
-F 5 "Audio" H 1250 4300 50  0001 C CNN "notes"
+F 5 "Audio, 16V+" H 1250 4300 50  0001 C CNN "notes"
 F 6 "1" H 1250 4300 50  0001 C CNN "populate"
 	1    1250 4300
 	0    1    1    0   
@@ -1192,6 +1201,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5490 5415 50  0
 F 3 "~" H 5450 5425 50  0001 C CNN
 F 4 "ERA-3AED104V" H 5450 5425 50  0001 C CNN "mpn"
 F 5 "1" H 5450 5425 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 5450 5425 50  0001 C CNN "notes"
 	1    5450 5425
 	-1   0    0    1   
 $EndComp
@@ -1216,6 +1226,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5815 5565 50  0
 F 3 "~" H 5775 5575 50  0001 C CNN
 F 4 "ERA-3AED104V" H 5775 5575 50  0001 C CNN "mpn"
 F 5 "1" H 5775 5575 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 5775 5575 50  0001 C CNN "notes"
 	1    5775 5575
 	0    -1   -1   0   
 $EndComp
@@ -1231,7 +1242,7 @@ F 1 "0.1uF" H 6165 5730 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 5625 50  0001 C CNN
 F 3 "~" H 6050 5775 50  0001 C CNN
 F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 6050 5775 50  0001 C CNN "mpn"
-F 5 "LPF" H 6050 5775 50  0001 C CNN "notes"
+F 5 "Logic, 16V+" H 6050 5775 50  0001 C CNN "notes"
 F 6 "1" H 6050 5775 50  0001 C CNN "populate"
 	1    6050 5775
 	1    0    0    -1  
@@ -1270,8 +1281,9 @@ F 0 "U2" H 6650 5842 50  0000 C CNN
 F 1 "74LVC1G04" H 6950 5450 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6675 5575 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 6675 5575 50  0001 C CNN
-F 4 "SN74LVC1G04DBV" H 6675 5575 50  0001 C CNN "mpn"
+F 4 "74LVC1G04GW, SN74LVC1G04DBV" H 6675 5575 50  0001 C CNN "mpn"
 F 5 "1" H 6675 5575 50  0001 C CNN "populate"
+F 6 "Prefer nexperia over TI" H 6675 5575 50  0001 C CNN "notes"
 	1    6675 5575
 	1    0    0    -1  
 $EndComp
@@ -1340,7 +1352,7 @@ F 1 "MAX9717B" H 7800 3725 50  0000 C CNN
 F 2 "winterbloom:MAX9717B" H 7450 3350 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX9716-MAX9717.pdf" H 7450 3350 50  0001 C CNN
 F 4 "MAX9717B" H 7450 3350 50  0001 C CNN "mpn"
-F 5 "Can use C/D, but gain is higher" H 7450 3350 50  0001 C CNN "notes"
+F 5 "B variant preferred, posssible to use C/D but verify before subsitution" H 7450 3350 50  0001 C CNN "notes"
 F 6 "1" H 7450 3350 50  0001 C CNN "populate"
 	1    7450 3350
 	1    0    0    -1  
@@ -1390,7 +1402,7 @@ F 1 "1uF" H 7040 3830 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6963 3725 50  0001 C CNN
 F 3 "~" H 6925 3875 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6925 3875 50  0001 C CNN "mpn"
-F 5 "Bypass" H 6925 3875 50  0001 C CNN "notes"
+F 5 "Bypass, 16V+" H 6925 3875 50  0001 C CNN "notes"
 F 6 "1" H 6925 3875 50  0001 C CNN "populate"
 	1    6925 3875
 	1    0    0    -1  
@@ -1414,7 +1426,7 @@ Wire Wire Line
 	6100 2950 6150 2950
 Wire Wire Line
 	6150 3150 6100 3150
-Text Notes 4575 4450 0    50   ~ 0
+Text Notes 4600 4625 0    50   ~ 0
 Fixed internal gain: 6dB
 Text Notes 5425 5800 0    50   ~ 0
 LPF @ 15 Hz
@@ -1422,8 +1434,6 @@ Text Notes 9975 6400 0    50   ~ 0
 SJ-63083D
 Text Notes 9950 5550 0    50   ~ 0
 CDS-40288
-Text Notes 4575 4625 0    50   ~ 0
-TODO: See if R7 & R9 can be eliminated now\nthat the headphone amp outputs are current limited
 Wire Wire Line
 	4675 5475 4725 5475
 Wire Wire Line
@@ -1453,6 +1463,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6090 1540 50  0
 F 3 "~" H 6050 1550 50  0001 C CNN
 F 4 "RG1608P-103-D-T5, MCT06030D1002DP500" H 6050 1550 50  0001 C CNN "mpn"
 F 5 "1" H 6050 1550 50  0001 C CNN "populate"
+F 6 "Audio, thin film only" H 6050 1550 50  0001 C CNN "notes"
 	1    6050 1550
 	0    -1   -1   0   
 $EndComp
@@ -1481,7 +1492,7 @@ F 1 "1k" V 5311 1275 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5465 1265 50  0001 C CNN
 F 3 "~" H 5425 1275 50  0001 C CNN
 F 4 "ERA-3AEB102V, TNPW06031K00FHEA, RN73R1JTTD1001D25" H 5425 1275 50  0001 C CNN "mpn"
-F 5 "" H 5425 1275 50  0001 C CNN "notes"
+F 5 "Audio, thin film only" H 5425 1275 50  0001 C CNN "notes"
 F 6 "1" H 5425 1275 50  0001 C CNN "populate"
 	1    5425 1275
 	0    1    1    0   
@@ -1495,7 +1506,7 @@ F 1 "1k" V 5311 1500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5465 1490 50  0001 C CNN
 F 3 "~" H 5425 1500 50  0001 C CNN
 F 4 "ERA-3AEB102V, TNPW06031K00FHEA, RN73R1JTTD1001D25" H 5425 1500 50  0001 C CNN "mpn"
-F 5 "" H 5425 1500 50  0001 C CNN "notes"
+F 5 "Audio, thin film only" H 5425 1500 50  0001 C CNN "notes"
 F 6 "1" H 5425 1500 50  0001 C CNN "populate"
 	1    5425 1500
 	0    -1   -1   0   
@@ -1543,7 +1554,7 @@ F 1 "27" V 3100 4275 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3240 4190 50  0001 C CNN
 F 3 "~" H 3200 4200 50  0001 C CNN
 F 4 "ERA-6AHD270V, RT0805DRE0727RL" H 3200 4200 50  0001 C CNN "mpn"
-F 5 "125mW, audio path" H 3200 4200 50  0001 C CNN "notes"
+F 5 "16-33 Ohm, 125mW+, audio, thin film only, power dissipation" H 3200 4200 50  0001 C CNN "notes"
 F 6 "1" H 3200 4200 50  0001 C CNN "populate"
 	1    3200 4200
 	0    1    1    0   
@@ -1557,7 +1568,7 @@ F 1 "27" V 3300 4375 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3240 4290 50  0001 C CNN
 F 3 "~" H 3200 4300 50  0001 C CNN
 F 4 "ERA-6AHD270V, RT0805DRE0727RL" H 3200 4300 50  0001 C CNN "mpn"
-F 5 "125mW, audio path" H 3200 4300 50  0001 C CNN "notes"
+F 5 "16-33 Ohm, 125mW+, audio, thin film only, power dissipation" H 3200 4300 50  0001 C CNN "notes"
 F 6 "1" H 3200 4300 50  0001 C CNN "populate"
 	1    3200 4300
 	0    1    1    0   
@@ -1581,7 +1592,7 @@ F 1 "22pF" V 2425 1200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2513 900 50  0001 C CNN
 F 3 "~" H 2475 1050 50  0001 C CNN
 F 4 "MF-CAP-0603-22pF" H 2475 1050 50  0001 C CNN "mpn"
-F 5 "Audio" H 2475 1050 50  0001 C CNN "notes"
+F 5 "Audio, 16V+" H 2475 1050 50  0001 C CNN "notes"
 F 6 "1" H 2475 1050 50  0001 C CNN "populate"
 	1    2475 1050
 	0    1    1    0   
@@ -1607,7 +1618,7 @@ F 1 "22pF" V 2425 2350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2513 2050 50  0001 C CNN
 F 3 "~" H 2475 2200 50  0001 C CNN
 F 4 "MF-CAP-0603-22pF" H 2475 2200 50  0001 C CNN "mpn"
-F 5 "Audio" H 2475 2200 50  0001 C CNN "notes"
+F 5 "Audio, 16V+" H 2475 2200 50  0001 C CNN "notes"
 F 6 "1" H 2475 2200 50  0001 C CNN "populate"
 	1    2475 2200
 	0    1    1    0   
