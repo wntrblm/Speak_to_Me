@@ -35,6 +35,7 @@ F 3 "~" H 3875 7050 50  0001 C CNN
 F 4 "Power supply filtering, Low esr, 10-47uF, 16V+, pref 25V+" H 3875 7050 50  0001 C CNN "notes"
 F 5 "GRM21BR61E226ME44K, CL21A226KOQNNNE (16V)" H 3875 7050 50  0001 C CNN "mpn"
 F 6 "1" H 3875 7050 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2X1iO9q" H 3875 7050 50  0001 C CNN "search link"
 	1    3875 7050
 	1    0    0    -1  
 $EndComp
@@ -49,6 +50,7 @@ F 3 "~" H 5825 7050 50  0001 C CNN
 F 4 "Power supply stability, Low esr, 10-22uF, 16V+" H 5825 7050 50  0001 C CNN "notes"
 F 5 "GRM21BR61E226ME44K, CL21A226KOQNNNE (16V)" H 5825 7050 50  0001 C CNN "mpn"
 F 6 "1" H 5825 7050 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2X1iO9q" H 5825 7050 50  0001 C CNN "search link"
 	1    5825 7050
 	1    0    0    -1  
 $EndComp
@@ -104,6 +106,7 @@ F 3 "~" H 2475 1175 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 1175 50  0001 C CNN "mpn"
 F 5 "1" H 2475 1175 50  0001 C CNN "populate"
 F 6 "Audio, thin film only" H 2475 1175 50  0001 C CNN "notes"
+F 7 "https://mou.sr/3tqYUAS" H 2475 1175 50  0001 C CNN "search link"
 	1    2475 1175
 	0    1    1    0   
 $EndComp
@@ -328,9 +331,10 @@ F 0 "C10" H 10042 1221 50  0000 L CNN
 F 1 "0.1uF" H 10042 1130 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1175 50  0001 C CNN
 F 3 "~" H 9950 1175 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 9950 1175 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF" H 9950 1175 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 9950 1175 50  0001 C CNN "notes"
 F 6 "1" H 9950 1175 50  0001 C CNN "populate"
+F 7 "https://mou.sr/3tk3OQ0" H 9950 1175 50  0001 C CNN "search link"
 	1    9950 1175
 	1    0    0    -1  
 $EndComp
@@ -342,9 +346,10 @@ F 0 "C11" H 10042 1621 50  0000 L CNN
 F 1 "0.1uF" H 10042 1530 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 1575 50  0001 C CNN
 F 3 "~" H 9950 1575 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 9950 1575 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF" H 9950 1575 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 9950 1575 50  0001 C CNN "notes"
 F 6 "1" H 9950 1575 50  0001 C CNN "populate"
+F 7 "https://mou.sr/3tk3OQ0" H 9950 1575 50  0001 C CNN "search link"
 	1    9950 1575
 	1    0    0    -1  
 $EndComp
@@ -389,9 +394,10 @@ F 0 "C14" H 8110 4229 50  0000 R CNN
 F 1 "0.1uF" H 8110 4320 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8263 4125 50  0001 C CNN
 F 3 "~" H 8225 4275 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 8225 4275 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF" H 8225 4275 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 8225 4275 50  0001 C CNN "notes"
 F 6 "1" H 8225 4275 50  0001 C CNN "populate"
+F 7 "https://mou.sr/3tk3OQ0" H 8225 4275 50  0001 C CNN "search link"
 	1    8225 4275
 	-1   0    0    1   
 $EndComp
@@ -425,9 +431,10 @@ F 0 "C13" H 7685 4229 50  0000 R CNN
 F 1 "10uF" H 7685 4320 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7838 4125 50  0001 C CNN
 F 3 "~" H 7800 4275 50  0001 C CNN
-F 4 "GRM188R61C106MAALD" H 7800 4275 50  0001 C CNN "mpn"
+F 4 "C1608X5R1C106M080AB" H 7800 4275 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 7800 4275 50  0001 C CNN "notes"
 F 6 "1" H 7800 4275 50  0001 C CNN "populate"
+F 7 "https://mou.sr/3l27xxZ" H 7800 4275 50  0001 C CNN "search link"
 	1    7800 4275
 	-1   0    0    1   
 $EndComp
@@ -453,6 +460,7 @@ F 3 "~" H 6000 2950 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6000 2950 50  0001 C CNN "mpn"
 F 5 "Audio, 16V+" H 6000 2950 50  0001 C CNN "notes"
 F 6 "1" H 6000 2950 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 6000 2950 50  0001 C CNN "search link"
 	1    6000 2950
 	0    1    1    0   
 $EndComp
@@ -467,6 +475,7 @@ F 3 "~" H 6000 3150 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6000 3150 50  0001 C CNN "mpn"
 F 5 "Audio, 16V+" H 6000 3150 50  0001 C CNN "notes"
 F 6 "1" H 6000 3150 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 6000 3150 50  0001 C CNN "search link"
 	1    6000 3150
 	0    -1   -1   0   
 $EndComp
@@ -531,6 +540,7 @@ F 3 "~" H 2475 2325 50  0001 C CNN
 F 4 "RT0603FRE1330KL" H 2475 2325 50  0001 C CNN "mpn"
 F 5 "1" H 2475 2325 50  0001 C CNN "populate"
 F 6 "Audio, thin film only" H 2475 2325 50  0001 C CNN "notes"
+F 7 "https://mou.sr/3tqYUAS" H 2475 2325 50  0001 C CNN "search link"
 	1    2475 2325
 	0    1    1    0   
 $EndComp
@@ -931,6 +941,7 @@ F 3 "~" H 3100 4950 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 3100 4950 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 3100 4950 50  0001 C CNN "notes"
 F 6 "1" H 3100 4950 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 3100 4950 50  0001 C CNN "search link"
 	1    3100 4950
 	1    0    0    -1  
 $EndComp
@@ -980,6 +991,7 @@ F 3 "~" H 2950 5700 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 2950 5700 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 2950 5700 50  0001 C CNN "notes"
 F 6 "1" H 2950 5700 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 2950 5700 50  0001 C CNN "search link"
 	1    2950 5700
 	-1   0    0    1   
 $EndComp
@@ -1018,6 +1030,7 @@ F 3 "~" H 3350 5700 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 3350 5700 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 3350 5700 50  0001 C CNN "notes"
 F 6 "1" H 3350 5700 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 3350 5700 50  0001 C CNN "search link"
 	1    3350 5700
 	-1   0    0    1   
 $EndComp
@@ -1042,9 +1055,10 @@ F 0 "C5" H 2575 5400 50  0000 R CNN
 F 1 "0.1uF" H 2675 5475 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2288 5250 50  0001 C CNN
 F 3 "~" H 2250 5400 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 2250 5400 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF" H 2250 5400 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 2250 5400 50  0001 C CNN "notes"
 F 6 "1" H 2250 5400 50  0001 C CNN "populate"
+F 7 "https://mou.sr/3tk3OQ0" H 2250 5400 50  0001 C CNN "search link"
 	1    2250 5400
 	-1   0    0    1   
 $EndComp
@@ -1059,6 +1073,7 @@ F 3 "~" H 2350 5500 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 2350 5500 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 2350 5500 50  0001 C CNN "notes"
 F 6 "1" H 2350 5500 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 2350 5500 50  0001 C CNN "search link"
 	1    2350 5500
 	-1   0    0    1   
 $EndComp
@@ -1107,6 +1122,7 @@ F 3 "~" H 1250 4600 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 1250 4600 50  0001 C CNN "mpn"
 F 5 "Audio, 16V+" H 1250 4600 50  0001 C CNN "notes"
 F 6 "1" H 1250 4600 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 1250 4600 50  0001 C CNN "search link"
 	1    1250 4600
 	0    -1   -1   0   
 $EndComp
@@ -1121,6 +1137,7 @@ F 3 "~" H 1250 4300 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 1250 4300 50  0001 C CNN "mpn"
 F 5 "Audio, 16V+" H 1250 4300 50  0001 C CNN "notes"
 F 6 "1" H 1250 4300 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 1250 4300 50  0001 C CNN "search link"
 	1    1250 4300
 	0    1    1    0   
 $EndComp
@@ -1241,9 +1258,10 @@ F 0 "C16" H 6165 5821 50  0000 L CNN
 F 1 "0.1uF" H 6165 5730 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 5625 50  0001 C CNN
 F 3 "~" H 6050 5775 50  0001 C CNN
-F 4 "MF-CAP-0603-0.1uF, C1608X7R1E104K080AA" H 6050 5775 50  0001 C CNN "mpn"
+F 4 "MF-CAP-0603-0.1uF" H 6050 5775 50  0001 C CNN "mpn"
 F 5 "Logic, 16V+" H 6050 5775 50  0001 C CNN "notes"
 F 6 "1" H 6050 5775 50  0001 C CNN "populate"
+F 7 "https://mou.sr/3tk3OQ0" H 6050 5775 50  0001 C CNN "search link"
 	1    6050 5775
 	1    0    0    -1  
 $EndComp
@@ -1404,6 +1422,7 @@ F 3 "~" H 6925 3875 50  0001 C CNN
 F 4 "CL10A105KA8NFNC" H 6925 3875 50  0001 C CNN "mpn"
 F 5 "Bypass, 16V+" H 6925 3875 50  0001 C CNN "notes"
 F 6 "1" H 6925 3875 50  0001 C CNN "populate"
+F 7 "https://mou.sr/2YFmb6R" H 6925 3875 50  0001 C CNN "search link"
 	1    6925 3875
 	1    0    0    -1  
 $EndComp
@@ -1594,6 +1613,7 @@ F 3 "~" H 2475 1050 50  0001 C CNN
 F 4 "MF-CAP-0603-22pF" H 2475 1050 50  0001 C CNN "mpn"
 F 5 "Audio, 16V+" H 2475 1050 50  0001 C CNN "notes"
 F 6 "1" H 2475 1050 50  0001 C CNN "populate"
+F 7 "https://mou.sr/38P4VxG" H 2475 1050 50  0001 C CNN "search link"
 	1    2475 1050
 	0    1    1    0   
 $EndComp
@@ -1620,6 +1640,7 @@ F 3 "~" H 2475 2200 50  0001 C CNN
 F 4 "MF-CAP-0603-22pF" H 2475 2200 50  0001 C CNN "mpn"
 F 5 "Audio, 16V+" H 2475 2200 50  0001 C CNN "notes"
 F 6 "1" H 2475 2200 50  0001 C CNN "populate"
+F 7 "https://mou.sr/38P4VxG" H 2475 2200 50  0001 C CNN "search link"
 	1    2475 2200
 	0    1    1    0   
 $EndComp
