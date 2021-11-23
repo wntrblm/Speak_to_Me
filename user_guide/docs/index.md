@@ -106,7 +106,7 @@ If you happen to have **two** Speak to Me modules, you can set up one module on 
 
 ## Recommended accessories
 
-Like most audio equipment, connecting Speak to Me to external equipment can require using adapters. We recommend [HOSA]() cables and adapters. You can purchase these online or through a local music equipment retailer.
+Like most audio equipment, connecting Speak to Me to external equipment can require using adapters. We recommend [HOSA](https://hosatech.com) cables and adapters. You can purchase these online or through a local music equipment retailer.
 
 - [3.5mm TRS to 1/4" TRS adapter](https://hosatech.com/products/analog-audio/adapters/general-adapters/gpm-103/) for connecting headphones that have the smaller 3.5mm plug to Speak to Me's 1/4" jack.
 - [1/4" TRS cable](https://hosatech.com/products/analog-audio/interconnect-cables/single-interconnects/css-100/) for connecting Speak to Me's line output to equipment that accepts stereo TRS inputs.
