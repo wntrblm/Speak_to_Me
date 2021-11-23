@@ -23,4 +23,4 @@ markdown_extensions:
               referrerpolicy: "origin"
 nav:
     - "User Guide": index.md
-    # - "Kit Build Instructions": build.md
+    - "Kit Build Instructions": build.md
