@@ -39,7 +39,7 @@ There's a few different ways that you can patch Speak to Me depending on your se
 
 ### Mono in with speaker
 
-![Mono input with the speaker active](/images/mono-speaker.png)
+![Mono input with the speaker active](/images/mono-speaker.png){: .dark-invert }
 
 The most basic setup. Connect Eurorack-level audio to the top 3.5mm jack and Speak to Me will play the audio through its speaker
 
@@ -47,7 +47,7 @@ This is great for small setups but also super useful in larger racks if you want
 
 ### Mono in with headphones
 
-![Mono input with headphones](/images/mono-headphones.png)
+![Mono input with headphones](/images/mono-headphones.png){: .dark-invert }
 
 Connect Eurorack-level audio to the top 3.5mm jack and connect a pair of stereo headphones to the larger 1/4" TRS jack. Speak to Me will play the audio through both the left and right headphone - no need to patch the same signal twice. The speaker is automatically turned off when headphones are connected.
 
@@ -55,11 +55,11 @@ Just like with the previous setup, this is wonderful for small setups and monito
 
 ### Mono in with line out
 
-![Mono input with stereo cable line out](/images/mono-line.png)
+![Mono input with stereo cable line out](/images/mono-line.png){: .dark-invert }
 
 Connect Eurorack-level audio to the top 3.5mm jack and connect a 1/4" stereo TRS cable to the larger 1/4" TRS jack. Connect the other end of the TRS cable to your mixer, interface, or other line-level equipment. Speak to Me will output the same audio to both the left and right channels of the cable.
 
-![Mono input with split cable line out](/images/mono-line-split.png)
+![Mono input with split cable line out](/images/mono-line-split.png){: .dark-invert }
 
 Alternatively, use a 1/4" stereo TRS splitter to split the left and right channels. Since this signal is mono, both channels will be the same.
 
@@ -70,7 +70,7 @@ This setup is great for getting audio out of your Eurorack and into a recording,
 
 ### Stereo in with speaker
 
-![Stereo input with speaker active](/images/stereo-speaker.png)
+![Stereo input with speaker active](/images/stereo-speaker.png){: .dark-invert }
 
 Connect the Eurorack-level audio signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack. Speak to Me will downmix the two signals to mono and play the audio through the speaker.
 
@@ -79,7 +79,7 @@ to monitor two (possibly unrelated) signals at the same time.
 
 ### Stereo in with headphones
 
-![Stereo input with headphones](/images/stereo-headphones.png)
+![Stereo input with headphones](/images/stereo-headphones.png){: .dark-invert }
 
 Connect the Eurorack-level audio signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack. Connect a pair of stereo headphones to the larger 1/4" TRS jack. Speak to Me will play the audio through the headphones. The speaker is automatically turned off when headphones are connected.
 
@@ -87,11 +87,11 @@ Like the mono setup, this benefits from lower power consumption which is ideal f
 
 ### Stereo in with line out
 
-![Stereo input with stereo line out](/images/stereo-line.png)
+![Stereo input with stereo line out](/images/stereo-line.png){: .dark-invert }
 
 Connect the Eurorack-level audio signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack. Connect the other end of the TRS cable to your mixer, interface, or other line-level equipment.
 
-![Stereo input with split line out](/images/stereo-line-split.png)
+![Stereo input with split line out](/images/stereo-line-split.png){: .dark-invert }
 
 Alternatively, use a 1/4" stereo TRS splitter to split the left and right channels.
 
@@ -99,7 +99,7 @@ Like the mono setup, this is great for getting audio out of your Eurorack and in
 
 ### Stereo speakers
 
-![Stereo speaker setup using two Speak to Me modules](/images/double.png)
+![Stereo speaker setup using two Speak to Me modules](/images/double.png){: .dark-invert }
 
 If you happen to have **two** Speak to Me modules, you can set up one module on each side of your rack and use them as a pair of stereo speakers. Connect your right channel signal to the top 3.5mm input on the right-side Speak to Me and connect the left channel signal to the top 3.5mm input on the left side.
 
@@ -118,11 +118,9 @@ Like most audio equipment, connecting Speak to Me to external equipment can requ
 
 Speak to Me is completely open source and hacking is encouraged.
 
-* The [hardware designs](https://github.com/wntrblm/Speak_to_Me/tree/main/hardware) is available under the permissive [CERN-OHL-P v2](https://cern-ohl.web.cern.ch/) and is designed using [KiCAD](https://kicad.org/) which is free and open-source. You can open the hardware files using KiCAD or you can [check out a PDF of the schematic](https://github.com/wntrblm/Speak_to_Me/tree/main/hardware/board/board.pdf).
+The [hardware design](https://github.com/wntrblm/Speak_to_Me/tree/main/hardware) is available under the permissive [CERN-OHL-P v2](https://cern-ohl.web.cern.ch/) and is designed using [KiCAD](https://kicad.org/) which is free and open-source. You can open the hardware files using KiCAD or you can [check out a PDF of the schematic](https://github.com/wntrblm/Speak_to_Me/tree/main/hardware/board/board.pdf).
 
-<!--
-![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Speak to Me is [certified open source hardware](TODO) -->
-Speak to Me has been submitted to the [Open Source Hardware Association](https://oshwa.org) for certification and is awaiting review.
+![Open Source Hardware Association mark](images/oshw.svg){class=oshw} Speak to Me is [certified open source hardware](https://certification.oshwa.org/us002060.html)
 
 
 ## Warranty, disclaimers, and limits
