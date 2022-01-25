@@ -8,8 +8,6 @@ Welcome to the build guide for Speak to Me's DIY kit. We hope you have a great t
 
 Please **read all instructions** thoroughly before starting. If you have questions or run into trouble please reach out to us on [discord] or drop us an email at support@winterbloom.com.
 
-If you purchased the surface mount kit, head over to the [surface mount kit build guide](/surface-mount-build) before going through this one.
-
 This kit is a beginner-level kit, but it does have a few tricky parts. If it's your first time soldering we recommend reading through [Adafruit's guide to excellent soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering) and practicing a little before jumping in.
 
 This build takes around **two hours** to complete.
