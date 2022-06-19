@@ -1,0 +1,828 @@
+/*
+    Section: imports
+*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;700&family=IBM+Plex+Mono&family=Material+Icons&family=Nunito&display=swap");
+
+/*
+    Section: non-sematic global variables
+*/
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-not-quite-black: #333;
+    --color-yellow-1: rgb(184, 125, 33);
+    --color-yellow-2: rgb(219, 161, 64);
+    --color-yellow-3: rgb(250, 194, 105);
+    --color-yellow-4: rgb(255, 214, 143);
+    --color-yellow-5: rgb(255, 229, 186);
+    --color-red-1: rgb(191, 36, 54);
+    --color-red-2: rgb(217, 74, 92);
+    --color-red-3: rgb(245, 115, 128);
+    --color-red-4: rgb(250, 153, 163);
+    --color-red-5: rgb(252, 194, 201);
+    --color-teal-1: rgb(38, 120, 128);
+    --color-teal-2: rgb(64, 140, 148);
+    --color-teal-3: rgb(102, 173, 181);
+    --color-teal-4: rgb(153, 209, 214);
+    --color-teal-5: rgb(204, 237, 240);
+    --color-purple-1: rgb(94, 64, 158);
+    --color-purple-2: rgb(125, 97, 186);
+    --color-purple-3: rgb(163, 138, 214);
+    --color-purple-4: rgb(199, 184, 237);
+    --color-purple-5: rgb(235, 227, 250);
+    --color-alt-yellow-5: rgb(255, 251, 200);
+    --color-alt-yellow-4: rgb(255, 249, 162);
+    --color-alt-yellow-3: rgb(254, 247, 129);
+    --color-alt-yellow-2: rgb(202, 196, 100);
+    --color-alt-yellow-1: rgb(137, 133, 78);
+    --color-alt-green-5: rgb(199, 255, 226);
+    --color-alt-green-4: rgb(162, 255, 207);
+    --color-alt-green-3: rgb(129, 255, 190);
+    --color-alt-green-2: rgb(100, 203, 150);
+    --color-alt-green-1: rgb(78, 137, 107);
+    --color-alt-cyan-5: rgb(199, 248, 254);
+    --color-alt-cyan-4: rgb(163, 243, 255);
+    --color-alt-cyan-3: rgb(129, 238, 255);
+    --color-alt-cyan-2: rgb(100, 190, 203);
+    --color-alt-cyan-1: rgb(78, 129, 137);
+    --color-alt-purple-5: rgb(220, 200, 255);
+    --color-alt-purple-4: rgb(196, 163, 255);
+    --color-alt-purple-3: rgb(174, 129, 255);
+    --color-alt-purple-2: rgb(136, 100, 202);
+    --color-alt-purple-1: rgb(98, 78, 137);
+    --color-alt-purple-alt-5: rgb(128, 119, 168);
+    --color-alt-purple-alt-4: rgb(113, 103, 153);
+    --color-alt-purple-alt-3: rgb(67, 62, 86);
+    --color-alt-purple-alt-2: rgb(40, 38, 52);
+    --color-alt-purple-alt-1: rgb(18, 18, 24);
+    --color-alt-red-5: rgb(255, 200, 219);
+    --color-alt-red-4: rgb(255, 163, 195);
+    --color-alt-red-3: rgb(254, 129, 173);
+    --color-alt-red-2: rgb(202, 100, 135);
+    --color-alt-red-1: rgb(137, 77, 98);
+    --color-alt-cream: rgb(228, 229, 198);
+    --color-alt-gray: rgb(137, 137, 119);
+    --color-alt-light-gray: rgb(191, 191, 191);
+    --color-alt-off-white: rgb(247, 248, 240);
+    --color-alt-white: rgb(255, 255, 255);
+
+    /* properties */
+    --letter-spacing-1: 0.05em;
+    --letter-spacing-2: 0.1em;
+
+    /* fonts */
+    --font-overpass: "Overpass", Helvetica, Arial, sans-serif;
+    --font-nunito: "Nunito", Arial, "Geneva", sans-serif;
+    --font-ibm-plex-mono: "IBM Plex Mono", "Monaco", "Consolas", monospace;
+}
+
+/*
+    Section: semantic global variables
+*/
+/* stylelint-disable-next-line no-duplicate-selectors */
+:root {
+    /* general typography */
+    --display-font: var(--font-overpass);
+    --text-font: var(--font-nunito);
+    --mono-font: var(--font-ibm-plex-mono);
+    --font-size-base: 23px;
+    --font-size-smallest: 0.5rem;
+    --font-size-smaller: 0.75rem;
+    --font-size-slightly-smaller: 0.9rem;
+    --font-size-normal: 1rem;
+    --font-size-slightly-larger: 1.25rem;
+    --font-size-larger: 1.75rem;
+    --font-size-largest: 2rem;
+
+    /* general typography colors */
+    --text-color: var(--color-not-quite-black);
+    --text-color-strong: black;
+    --header-color: var(--color-purple-1);
+    --header-anchor-color: var(--color-purple-4);
+    --header-anchor-color-hover: var(--color-teal-2);
+
+    /* links */
+    --link-color: var(--color-red-1);
+    --link-decoration: underline var(--color-red-4) solid 1px;
+    --link-hover-color: var(--color-teal-1);
+    --link-hover-decoration: underline var(--color-alt-cyan-4) solid 1px;
+
+    /* buttons */
+    --primary-button-text-color: var(--color-white);
+    --primary-button-bg: var(--color-purple-2);
+    --success-button-text-color: var(--color-white);
+    --success-button-bg: var(--color-alt-green-2);
+    --add-to-cart-button-text-color: var(--color-white);
+    --add-to-cart-button-bg: var(--color-purple-2);
+
+    /* nav & header */
+    --header-link-color: var(--color-teal-1);
+    --header-link-hover-color: var(--color-red-1);
+
+    /* admonitions */
+    --admonition-note-color: var(--color-purple-3);
+    --admonition-note-outline: var(--color-purple-2);
+    --admonition-warning-color: var(--color-red-3);
+    --admonition-warning-outline: var(--color-red-1);
+
+    /* forms */
+    --form-label-color: var(--color-not-quite-black);
+    --form-checkbox-hover: var(--color-alt-purple-2);
+    --form-help-background: var(--color-alt-cyan-5);
+    --form-help-code: var(--color-red-2);
+}
+
+/*
+    Base styles
+*/
+
+html,
+body,
+input,
+optgroup,
+select,
+textarea {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+}
+
+strong {
+    color: var(--text-color-strong);
+}
+
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--display-font);
+}
+
+/*
+    Section: links
+*/
+a,
+a:focus,
+a:hover {
+    color: var(--link-color);
+    text-decoration: var(--link-decoration);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: var(--link-hover-decoration);
+}
+
+a.tags,
+a.tags:hover {
+    text-decoration: none;
+}
+
+a.tags::after,
+a.button::after {
+    content: none;
+}
+
+/* Mark external links */
+a[href*="//"]:after
+{
+    content: "\2197";
+    vertical-align: super;
+    font-size: 50%;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*
+    Section: elevations
+*/
+.is-elevated {
+    --elevation-shadow-color: rgba(180, 180, 180, 0.3);
+
+    box-shadow: -0.2rem -0.2rem 0.4rem rgba(180, 180, 180, 0.2), 0.1rem 0.15rem 0.15rem var(--elevation-shadow-color),
+        0.2rem 0.3rem 0.3rem var(--elevation-shadow-color);
+}
+
+.is-elevated.is-elevated-hoverable {
+    transition: 500ms box-shadow;
+}
+
+.is-elevated-more,
+.is-elevated.is-elevated-hoverable:hover {
+    --elevation-shadow-color: rgba(180, 180, 180, 0.2);
+
+    box-shadow: -0.2rem -0.2rem 0.4rem rgba(180, 180, 180, 0.2), 0.15rem 0.3rem 0.3rem var(--elevation-shadow-color),
+        0.4rem 0.6rem 0.6rem var(--elevation-shadow-color);
+}
+
+/*
+    Section: header & nav styles
+*/
+.header {
+    margin-top: 1rem;
+    font-family: var(--display-font);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+/*
+    Section: header & nav styles
+*/
+.header {
+    margin-top: 1rem;
+    font-family: var(--display-font);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.header .navbar .navbar-brand img {
+    max-height: 2rem;
+}
+
+.header .navbar .navbar-menu .navbar-end {
+    align-items: center;
+}
+
+.header .navbar-menu .navbar-item {
+    color: var(--header-link-color);
+    text-decoration: none;
+    padding: 0.2rem 0.25rem;
+    margin-right: 0.75rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.header .navbar-menu .navbar-item:last-child {
+    margin-right: 0;
+}
+
+.header .navbar-menu a.navbar-item:hover {
+    color: var(--header-link-hover-color);
+    border-bottom: 2px solid var(--header-link-hover-color);
+    background: none;
+}
+
+.header .navbar-menu a.navbar-item.is-active {
+    border-bottom: 2px solid var(--header-link-color);
+}
+
+.header .navbar-menu .navbar-item.has-dropdown .navbar-link {
+    color: var(--header-link-color);
+    text-decoration: none;
+}
+
+.header .navbar-menu .navbar-dropdown {
+    padding: 0;
+    border-top: none;
+}
+
+.header .navbar-menu .has-dropdown.is-subactive .navbar-link {
+    border-bottom: 2px solid var(--header-link-color);
+}
+
+.header .navbar-menu .navbar-dropdown .navbar-item {
+    margin: 0;
+    padding: 1rem 1rem;
+    border-bottom: none;
+}
+
+.header .navbar-menu .navbar-dropdown .navbar-item:hover {
+    margin: 0;
+    border-bottom: none;
+}
+
+.header .navbar-menu .navbar-dropdown .navbar-item.is-active {
+    color: white;
+    background: var(--header-link-color);
+}
+
+/*
+    Section: Responsive styles for the navbar
+*/
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        padding: 0 0;
+    }
+
+    .header .navbar-menu .navbar-item {
+        text-align: center;
+        padding: 0.75rem 0.75rem;
+        margin: 0 0;
+    }
+
+    .header .navbar-menu .navbar-dropdown .navbar-item,
+    .header .navbar-menu .navbar-dropdown .navbar-item.is-active,
+    .header .navbar-menu .navbar-dropdown .navbar-item:hover {
+        border-bottom: none;
+    }
+}
+
+/*
+    Content header styles
+*/
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    color: var(--header-color);
+    font-weight: normal;
+    position: relative;
+}
+
+a.headerlink {
+    color: var(--header-anchor-color);
+    text-decoration: none;
+    position: absolute;
+    bottom: 0.1em;
+    left: -1.25ch;
+    font-size: 75%;
+}
+a.headerlink:hover {
+    color: var(--header-anchor-color-hover);
+}
+h1 a.headerlink {
+    display: none;
+}
+@media (max-width: 1024px) {
+    a.headerlink {
+        display: none;
+    }
+}
+
+/*
+    Content images
+*/
+
+.content img.float-right,
+.content img.float-left {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.content img.float-left {
+    float: left;
+    padding-right: 0.25rem;
+}
+
+.content img.float-right {
+    float: right;
+    padding-left: 0.25rem;
+}
+
+.content img.oshw {
+    margin: 0;
+    margin-left: -4px;
+    display: inline;
+    width: 100px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.content .image-caption {
+    display: block;
+    text-align: center;
+    margin-top: -2em;
+    margin-bottom: 3em;
+}
+
+/*
+    Code & pre-formatted text
+*/
+code,
+kbd {
+    font-size: 100%;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 0.15em 0.25em 0.15em;
+}
+
+code:not(pre code) {
+    background-color: #27787f;
+    white-space: nowrap;
+}
+
+.content pre {
+    font-family: "IBM Plex Mono", monospace;
+    padding: 20px;
+    margin: 1em 0;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+        0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+
+pre.lang-c::before,
+pre.lang-python::before,
+pre.lang-python3::before,
+pre.lang-bash::before,
+pre.lang-json::before,
+pre.lang-text::before {
+    display: block;
+    float: right;
+    color: #1bc5e0;
+    font-size: 75%;
+    user-select: none;
+}
+
+pre.lang-c::before {
+    content: "C";
+}
+pre.lang-python::before,
+pre.lang-python3::before {
+    content: "Python";
+}
+pre.lang-bash::before {
+    content: "sh";
+}
+pre.lang-json::before {
+    content: "json";
+}
+pre.lang-text::before {
+    content: "plaintext";
+}
+
+/*
+    Block quotes
+*/
+article blockquote {
+    border-left: 0.1em solid #8768bb;
+    padding-left: 1em;
+    color: #545b62;
+    margin: 2em 0;
+}
+
+/*
+    Admonitions
+*/
+
+article .admonition .admonition-title {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+article .admonition {
+    padding: 1.5em 1em 1.2em 1em;
+    border-left: 8px solid #999;
+    color: white;
+    margin: 2em 0;
+    font-weight: normal;
+}
+
+article .admonition a {
+    color: white;
+    text-decoration-color: white;
+    font-weight: bold;
+}
+
+article .admonition.note {
+    border-left-color: var(--admonition-note-color);
+    background-color: var(--admonition-note-outline);
+}
+article .admonition.note .admonition-title::before {
+    content: "💡 ";
+}
+
+article .admonition.warning {
+    border-left-color: var(--admonition-warning-color);
+    background-color: var(--admonition-warning-outline);
+}
+article .admonition.warning .admonition-title::before {
+    content: "⚠️ ";
+}
+
+.notification .fairy {
+    right: .7rem;
+    position: absolute;
+    top: .5rem;
+}
+
+.notification.is-danger {
+    border-left-color: var(--admonition-warning-color);
+    background-color: var(--admonition-warning-outline);
+}
+
+/*
+    Interactive elements
+*/
+.content .interactive {
+    width: 640px;
+    max-width: 80%;
+    margin: 2em auto;
+    padding: 1em 2em;
+}
+
+/*
+    Section: footer
+*/
+
+.footer {
+    background: none;
+}
+
+.footer .container {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-teal-4);
+    font-family: var(--mono-font);
+    font-size: var(--font-size-smaller);
+    text-align: center;
+    max-width: 600px;
+}
+
+.footer .social-icon-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.footer .social-icon-links a {
+    padding: 0 0.5rem;
+}
+
+.footer .social-icon-links a::after {
+    content: none;
+}
+
+/*
+    Section: Forms & inputs
+*/
+
+.form .section-divider {
+    display: block;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid #AAA;
+}
+
+label.label {
+    color: var(--form-label-color);
+}
+
+input.input[type=range] {
+    /* Undo bulma's hiding of the slider */
+    -webkit-appearance: auto;
+    box-shadow: none;
+    border: none;
+}
+
+input.checkbox {
+    transform: scale(2);
+    margin-right: 1em;
+    margin-top: -0.5em;
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+.checkbox:hover {
+    color: var(--form-checkbox-hover);
+}
+
+.device-info input[readonly] {
+    text-overflow: ellipsis;
+    background-color: #FEFEFE;
+    color: #5F419F;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    height: 2.5rem;
+}
+
+.device-info input[readonly]:hover {
+    border-color: #dbdbdb;
+}
+
+.device-info input[readonly]:focus {
+    border-color: #5F419F;
+}
+
+.device-info .copy-button {
+    background-color: #F5F5F5;
+    padding: 0.75rem;
+}
+
+.device-info .copy-button:hover {
+    background-color: #7D61BB;
+    color: white;
+    padding: 0.75rem;
+}
+
+.field .units {
+    font-size: 80%;
+    color: #a28ad6;
+    font-style: italic;
+    text-align: right;
+    display: block;
+}
+
+form .column .help-text {
+    margin-top: 2rem;
+    background: var(--form-help-background);
+}
+
+form .column .help-text code {
+    color: var(--form-help-code);
+    background-color: transparent;
+}
+
+.checkbox.danger-zone {
+    color: #BE2436;
+}
+
+.input.is-dangerous[readonly], .input.is-dangerous[disabled] {
+    background-color: #F5F5F5;
+}
+
+/*
+    Buttons
+*/
+
+/*
+    Section: buttons
+*/
+
+.button {
+    transition: filter 200ms, background-color 250ms;
+    text-decoration: none;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button:hover {
+    color: var(--primary-button-text-color);
+    filter: brightness(1.2);
+    text-decoration: none;
+}
+
+.button.is-primary {
+    color: var(--primary-button-text-color);
+    background: var(--primary-button-bg);
+}
+
+.button.is-warning {
+    background-color: var(--color-yellow-3);
+}
+
+.button.is-error {
+    background-color: var(--color-red-2);
+}
+
+.button.is-success,
+.button.is-success[disabled] {
+    color: var(--success-button-text-color);
+    background: var(--success-button-bg);
+    opacity: 1;
+}
+
+.button.is-success:hover {
+    filter: none;
+}
+
+.button .material-icons {
+    height: auto;
+    width: auto;
+}
+
+.button .material-icons:first-child:not(:last-child) {
+    margin-right: 0.6rem;
+    margin-left: -0.1rem;
+}
+
+.button .material-icons:last-child:not(:first-child) {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+a.button:hover,
+a.button.is-ghost:hover {
+    text-decoration: none;
+}
+
+a.button.is-ghost {
+    color: var(--color-purple-2);
+}
+
+a.button.is-ghost:hover {
+    color: var(--color-red-2);
+}
+
+.alt-button {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--primary-button-bg);
+    color: var(--primary-button-text-color);
+    padding: 0.5rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+/*
+    Misc helpers
+*/
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+    Dark mode
+*/
+
+.dark-mode-switch {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    text-shadow: 0 0 0.5rem var(--text-color);
+}
+
+.dark-mode-switch:hover {
+    color: var(--color-alt-cyan-3);
+    cursor: pointer;
+}
+
+.dark-mode-switch .material-icons {
+    font-size: 1.5rem;
+}
+
+html.dark, html.dark body, html.dark .navbar {
+    background: var(--color-alt-purple-alt-1);
+}
+
+html.dark {
+    /* general typography */
+    --text-color: var(--color-alt-white);
+    --text-color-strong: var(--color-alt-cream);
+    --header-color: var(--color-purple-3);
+    --header-anchor-color: var(--color-purple-1);
+    --header-anchor-color-hover: var(--color-teal-4);
+
+    /* links */
+    --link-color: var(--color-red-3);
+    --link-decoration: underline var(--color-red-5) solid 1px;
+    --link-hover-color: var(--color-teal-3);
+    --link-hover-decoration: underline var(--color-alt-cyan-4) solid 1px;
+
+    /* buttons */
+    --primary-button-text-color: var(--color-white);
+    --primary-button-bg: var(--color-purple-2);
+    --success-button-text-color: var(--color-white);
+    --success-button-bg: var(--color-alt-green-2);
+    --add-to-cart-button-text-color: var(--color-white);
+    --add-to-cart-button-bg: var(--color-purple-2);
+
+    /* nav & header */
+    --header-link-color: var(--color-teal-4);
+    --header-link-hover-color: var(--color-red-3);
+
+    /* forms */
+    --form-label-color: var(--color-alt-off-white);
+    --form-checkbox-hover: var(--color-alt-purple-4);
+    --form-help-background: var(--color-alt-cyan-2);
+    --form-help-code: var(--color-purple-2);
+}
+
+@media screen and (max-width: 1023px) {
+    html.dark .navbar-menu {
+        background: var(--color-alt-purple-alt-2);
+    }
+    html.dark .navbar-menu .navbar-item.is-active {
+        background: var(--color-alt-purple-alt-3);
+    }
+}
+
+html.dark .navbar-brand img {
+    filter: brightness(1.50);
+}
+
+html.dark .navbar-item.has-dropdown:hover .navbar-link {
+    background: none;
+}
+
+html.dark .navbar-item:focus-within,  html.dark .navbar-dropdown {
+    background: var(--color-alt-purple-alt-2);
+}
+
+html.dark .navbar-item:focus-within,  html.dark .navbar-dropdown .navbar-item:hover {
+    background: var(--color-alt-purple-alt-3);
+}
+
+html.dark .card {
+    background: var(--color-alt-purple-alt-2);
+}
+
+html.dark .oshw {
+    filter: invert(1);
+}
+
+html.dark img.dark-invert {
+    filter: invert(1) hue-rotate(180deg);
+}
