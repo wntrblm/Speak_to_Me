@@ -6,7 +6,7 @@
 
 ## Specifications
 
-* [$169 MSRP](https://winterbloom.com/store/speak-to-me)
+* Available [assembled](https://winterbloom.com/shop/speak-to-me) or as a [kit](https://winterbloom.com/shop/speak-to-me-kit)
 * 6 HP
 * +12v @ 15 to 150mA, -12v @ 5mA
 * 30mm deep
