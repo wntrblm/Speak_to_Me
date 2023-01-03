@@ -45,29 +45,6 @@ The most basic setup. Connect Eurorack-level audio to the top 3.5mm jack and Spe
 
 This is great for small setups but also super useful in larger racks if you want to *monitor* a small part of your patch.
 
-### Mono in with headphones
-
-![Mono input with headphones](/images/mono-headphones.png){: .dark-invert }
-
-Connect Eurorack-level audio to the top 3.5mm jack and connect a pair of stereo headphones to the larger 1/4" TRS jack. Speak to Me will play the audio through both the left and right headphone - no need to patch the same signal twice. The speaker is automatically turned off when headphones are connected.
-
-Just like with the previous setup, this is wonderful for small setups and monitoring larger racks. One major benefit to this setup is that the module consumes much less power when the speaker is off, so this is ideal for portable and battery-powered setups.
-
-### Mono in with line out
-
-![Mono input with stereo cable line out](/images/mono-line.png){: .dark-invert }
-
-Connect Eurorack-level audio to the top 3.5mm jack and connect a 1/4" stereo TRS cable to the larger 1/4" TRS jack. Connect the other end of the TRS cable to your mixer, interface, or other line-level equipment. Speak to Me will output the same audio to both the left and right channels of the cable.
-
-![Mono input with split cable line out](/images/mono-line-split.png){: .dark-invert }
-
-Alternatively, use a 1/4" stereo TRS splitter to split the left and right channels. Since this signal is mono, both channels will be the same.
-
-This setup is great for getting audio out of your Eurorack and into a recording, mixer, or line-level effects units.
-
-!!! Note
-    If you need to connect a 1/4" mono cable to Speak to Me's output, we recommend using [an adapter](https://hosatech.com/products/analog-audio/adapters/general-adapters/gpp-419/). Using a mono cable directly might, in extreme cases, cause some audio issues such as "hiccups". This is because using a mono cable shorts the signal on the ring connector to ground and causes the module to draw more power. Speak to Me is [designed to operate](#warranty-disclaimers-and-limits) under these conditions, but we wanted to let you know just in case.
-
 ### Stereo in with speaker
 
 ![Stereo input with speaker active](/images/stereo-speaker.png){: .dark-invert }
@@ -77,6 +54,14 @@ Connect the Eurorack-level audio signal for the left channel to the top 3.5mm ja
 Like the mono setup, this is great for small setups and monitoring. It has the added benefit of being able
 to monitor two (possibly unrelated) signals at the same time.
 
+### Mono in with headphones
+
+![Mono input with headphones](/images/mono-headphones.png){: .dark-invert }
+
+Connect Eurorack-level audio to the top 3.5mm jack and connect a pair of stereo headphones to the larger 1/4" TRS jack. Speak to Me will play the audio through both the left and right headphone - no need to patch the same signal twice. The speaker is automatically turned off when headphones are connected.
+
+Just like with the previous setup, this is wonderful for small setups and monitoring larger racks. One major benefit to this setup is that the module consumes much less power when the speaker is off, so this is ideal for portable and battery-powered setups.
+
 ### Stereo in with headphones
 
 ![Stereo input with headphones](/images/stereo-headphones.png){: .dark-invert }
@@ -85,15 +70,42 @@ Connect the Eurorack-level audio signal for the left channel to the top 3.5mm ja
 
 Like the mono setup, this benefits from lower power consumption which is ideal for portable and battery-powered setups. It can also be used to monitor two different signals (one in each ear) if needed.
 
+### Mono in with line out
+
+First, connect the Eurorack-level audio signal to the top 3.5mm jack.
+
+Next, connect Speak to Me's 1/4" stereo output to your mixer, interface, or other line-level equipment. The specific cable needed to do this depends on your equipment's input options.
+
+If your equipment has a **stereo** line input, you can use a 1/4" TRS stereo cable [like this one](https://hosatech.com/products/analog-audio/interconnect-cables/single-interconnects/css-100/). Even though the interconnect is a stereo cable, Speak to Me will send the same signal to both channels:
+
+![Mono input with stereo cable line out](/images/mono-line.png){: .dark-invert }
+
+If your equipment has **mono** line, instrument, or microphone inputs such as those commonly found on recording interfaces, you can use a 1/4" TRS to 1/4" TS to adapter [like this one](https://hosatech.com/products/analog-audio/adapters/general-adapters/gpp-419/):
+
+![Mono input with mono cable line out](/images/mono-line-2.png){: .dark-invert }
+
+!!! Note
+    We highly recommend using the TRS to TR adapter over using a typical mono 1/4" TR cable. Using a mono cable directly might, in extreme cases, cause some audio issues such as "hiccups". This is because using a mono cable shorts the signal on the ring connector to ground and causes the module to draw more power. Speak to Me is [designed to operate](#warranty-disclaimers-and-limits) under these conditions, but we wanted to let you know just in case.
+
+Alternatively, you can use a 1/4" TRS Y-cable [like this one](https://hosatech.com/products/analog-audio/stereo-breakouts/hosa-breakouts/cmp-150/) as an adapter. You can connect either end of the Y cable to your equipment.
+
+![Mono input with split cable line out](/images/mono-line-split.png){: .dark-invert }
+
+This setup is great for getting audio out of your Eurorack and into a recording, mixer, or line-level effects units.
+
 ### Stereo in with line out
+
+First, connect the Eurorack-level audio signal inputs: connect the signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack.
+
+Next, connect Speak to Me's 1/4" stereo output to your mixer, interface, or other line-level equipment. The specific cable needed to do this depends on your equipment's input options.
+
+If your equipment has a **stereo** line input, you can use a 1/4" TRS stereo cable [like this one](https://hosatech.com/products/analog-audio/interconnect-cables/single-interconnects/css-100/):
 
 ![Stereo input with stereo line out](/images/stereo-line.png){: .dark-invert }
 
-Connect the Eurorack-level audio signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack. Connect the other end of the TRS cable to your mixer, interface, or other line-level equipment.
+However, if your equipment has **mono** line, instrument, or microphone inputs such as those commonly found on recording interfaces, you'll need to use a 1/4" TRS Y-cable [like this one](https://hosatech.com/products/analog-audio/stereo-breakouts/hosa-breakouts/cmp-150/) to split the left and right channels. You'll then connect each channel into a separate input on your equipment:
 
 ![Stereo input with split line out](/images/stereo-line-split.png){: .dark-invert }
-
-Alternatively, use a 1/4" stereo TRS splitter to split the left and right channels.
 
 Like the mono setup, this is great for getting audio out of your Eurorack and into a recording, mixer, or line-level effects units. It's especially useful if you have modules that produce stereo effects or if you want to record two independent patches at the same time.
 
@@ -110,7 +122,7 @@ Like most audio equipment, connecting Speak to Me to external equipment can requ
 
 - [3.5mm TRS to 1/4" TRS adapter](https://hosatech.com/products/analog-audio/adapters/general-adapters/gpm-103/) for connecting headphones that have the smaller 3.5mm plug to Speak to Me's 1/4" jack.
 - [1/4" TRS cable](https://hosatech.com/products/analog-audio/interconnect-cables/single-interconnects/css-100/) for connecting Speak to Me's line output to equipment that accepts stereo TRS inputs.
-- [1/4" stereo breakout](https://hosatech.com/products/analog-audio/stereo-breakouts/hosa-breakouts/ypp-117/) for splitting Speak to Me's stereo output into separate left and right channel signals.
+- [1/4" stereo breakout](https://hosatech.com/products/analog-audio/stereo-breakouts/hosa-breakouts/cmp-150/) for splitting Speak to Me's stereo output into separate left and right channel signals.
 - [1/4" TS to 1/4" TRS adapter](https://hosatech.com/products/analog-audio/adapters/general-adapters/gpp-419/) for connecting a 1/4" mono TS cable to Speak to Me's stereo output.
 
 
