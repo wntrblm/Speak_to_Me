@@ -52,8 +52,6 @@ Your kit should contain the following items. If any are missing please email us 
     <option value="jacks">1/8" jacks (2)</option>
     <option value="jack-nuts">Hex nuts for the 1/8" jacks (2)</option>
     <option value="power-header">Eurorack power header</option>
-    <option value="power-cable">Eurorack power cable</option>
-    <option value="screws">M3x6 screws (2)</option>
     <option value="rubber-band">Rubber band</option>
     <option value="jst-cable">JST wiring harness</option>
     <option value="_2p5-l-wrench">2.5mm L wrench</option>
@@ -92,8 +90,6 @@ Your kit should contain the following items. If any are missing please email us 
 - (1) JST XH-2 header
 - (1) JST 2-pin wiring harness
 - (1) Eurorack power header
-- (1) Eurorack power cable
-- (2) M3x6 screws for attaching the module to your rack
 - (1) Rubber band
 
 
