@@ -2,7 +2,7 @@
 title: Kit build guide
 ---
 
-# Speak to Me kit build guide
+# Build
 
 Welcome to the build guide for Speak to Me's DIY kit. We hope you have a great time putting this module together and a wonderful time using it.
 
@@ -15,61 +15,52 @@ This build takes around **two hours** to complete.
 [discord]: https://discord.gg/UpfqghQ
 
 
-## Tools and materials required
+## Tools required
 
-Before jumping in, make sure you have:
+Before you begin, make sure that you've got:
 
-* Safety glasses. Yes, really.
-* Proper ventilation- at least open a window or two.
-* A soldering iron, like [this one](https://www.adafruit.com/product/180).
-* Solder, we can recommend [Adafruit's 60/40 **no-clean** rosin core solder](https://www.adafruit.com/product/145). We suggest using soldering with "no clean" flux. If you do use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder.
+-   Safety glasses. Yes, **really**. A pair like [these][safety glasses] are fine.
+-   Proper ventilation, like this [small filtered fan](https://a.co/d/eUfPCRO).
+-   A **temperature-controlled** soldering iron, like this [Hakko] or the [Pinecil]. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.
+-   Solder. We recommend [Adafruit's SAC305 solder][adafruit solder] or [Kester 275 K100LD].
+
+!!! question "Flux"
+    We suggest using solder with "no clean" flux. If you use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. Take special care with the LEDs and potentiometers, as they can be damaged by water and flux cleaners.
+
+[safety glasses]: https://a.co/d/dMXvPP6
+[tweezers]: https://www.adafruit.com/product/422
+[Hakko]: https://www.adafruit.com/product/1204
+[Pinecil]: https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/
+[adafruit solder]: https://www.adafruit.com/product/734
+[Kester 275 K100LD]: https://www.kester.com/products/product/275-flux-cored-wire
+[flux pen]: https://www.sra-solder.com/sra-312-no-clean-flux-pen-refillable
 
 ## Kit contents
 
 Your kit should contain the following items. If any are missing please email us at support@winterbloom.com.
 
-<object
-    alt="Kit contents"
-    data-is-svg-map
-    data-list="kit-contents-img-datalist"
-    data-stylesheet="/styles/kit-contents-svgmap.css"
-    data-info-text-template="kit-contents-img-info-text"
-    data="../images/kit.svg"
-    height="100%"
-    id="kit-contents-img"
-    type="image/svg+xml"
-    width="100%">
-</object>
-<template id="kit-contents-img-info-text">
-    <g id="info-text-container">
-        <rect data-size-to="info-text"></rect>
-        <text id="info-text"></text>
-    </g>
-</template>
-<datalist id="kit-contents-img-datalist">
-    <option value="mainboard">Mainboard</option>
-    <option value="panel">Front panel</option>
-    <option value="jacks">1/8" jacks (2)</option>
-    <option value="jack-nuts">Hex nuts for the 1/8" jacks (2)</option>
-    <option value="power-header">Eurorack power header</option>
-    <option value="rubber-band">Rubber band</option>
-    <option value="jst-cable">JST wiring harness</option>
-    <option value="_2p5-l-wrench">2.5mm L wrench</option>
-    <option value="_2-l-wrench">2mm L wrench</option>
-    <option value="m3-bolts">M3x12 black hex bolts (4)</option>
-    <option value="m3-nuts">M3 nuts (4)</option>
-    <option value="jst-header">JST XH-2 header</option>
-    <option value="pot">Stereo potentiometer</option>
-    <option value="ffc">Flat flex cable</option>
-    <option value="speaker">Speaker</option>
-    <option value="grill">Grille cloth</option>
-    <option value="big-jack">1/4 stereo jack</option>
-    <option value="spacer">Speaker spacer</option>
-    <option value="knob">Knob</option>
-    <option value="headphone-breakout">Headphone jack breakout board</option>
-</datalist>
-<script type="module" src="/scripts/svgmap.js"></script>
-<link rel="stylesheet" href="/styles/svgmap.css"/>
+<winter-image-map src="../images/kit.svg">
+    <winter-image-map-item id="mainboard">Mainboard</winter-image-map-item>
+    <winter-image-map-item id="panel">Front panel</winter-image-map-item>
+    <winter-image-map-item id="jacks">1/8" jacks (2)</winter-image-map-item>
+    <winter-image-map-item id="jack-nuts">Hex nuts for the 1/8" jacks (2)</winter-image-map-item>
+    <winter-image-map-item id="power-header">Eurorack power header</winter-image-map-item>
+    <winter-image-map-item id="rubber-band">Rubber band</winter-image-map-item>
+    <winter-image-map-item id="jst-cable">JST wiring harness</winter-image-map-item>
+    <winter-image-map-item id="_2p5-l-wrench">2.5mm L wrench</winter-image-map-item>
+    <winter-image-map-item id="_2-l-wrench">2mm L wrench</winter-image-map-item>
+    <winter-image-map-item id="m3-bolts">M3x12 black hex bolts (4)</winter-image-map-item>
+    <winter-image-map-item id="m3-nuts">M3 nuts (4)</winter-image-map-item>
+    <winter-image-map-item id="jst-header">JST XH-2 header</winter-image-map-item>
+    <winter-image-map-item id="pot">Stereo potentiometer</winter-image-map-item>
+    <winter-image-map-item id="ffc">Flat flex cable</winter-image-map-item>
+    <winter-image-map-item id="speaker">Speaker</winter-image-map-item>
+    <winter-image-map-item id="grill">Grille cloth</winter-image-map-item>
+    <winter-image-map-item id="big-jack">1/4 stereo jack</winter-image-map-item>
+    <winter-image-map-item id="spacer">Speaker spacer</winter-image-map-item>
+    <winter-image-map-item id="knob">Knob</winter-image-map-item>
+    <winter-image-map-item id="headphone-breakout">Headphone jack breakout board</winter-image-map-item>
+</winter-image-map>
 
 
 - (1) Mainboard
@@ -137,9 +128,11 @@ Since the potentiometer and jacks need to peek through the front panel, you can 
 
 Use the rubber band to temporarily hold the front panel on while you're working on it. You'll need to double- or triple- over the rubber band to get it tight.
 
-![A rubber band being pulled taught across the center of the module](/images/11-rubber-band-4.jpg)
-![The module with a doubled-overed rubber band holding the panel in place](/images/11-rubber-band-3.jpg)
-![The same but showing the back side of the module](/images/11-rubber-band-2.jpg)
+<winter-carousel>
+    ![A rubber band being pulled taught across the center of the module](/images/11-rubber-band-4.jpg)
+    ![The module with a doubled-overed rubber band holding the panel in place](/images/11-rubber-band-3.jpg)
+    ![The same but showing the back side of the module](/images/11-rubber-band-2.jpg)
+</winter-carousel>
 
 ## Soldering the front side components
 
@@ -170,8 +163,10 @@ Next up is soldering the flat flex cable to the mainboard.
 
 Prepare the flat flex cable by removing the cover on one side of it. Just pull up lightly to get the cover to come off- **do not cut the flat flex cable**.
 
-![The flat flex cable with the small cover on the top of it being held lightly](/images/16-ffc-prep-3.jpg)
-![The flat flex cable with the small cover on the top removed, revealing the conductors](/images/16-ffc-prep-1.jpg)
+<winter-carousel>
+    ![The flat flex cable with the small cover on the top of it being held lightly](/images/16-ffc-prep-3.jpg)
+    ![The flat flex cable with the small cover on the top removed, revealing the conductors](/images/16-ffc-prep-1.jpg)
+</winter-carousel>
 
 Push the exposed conductors of the flat flex cable through the matching holes on the motherboard. This is designed to go together easily, just be take care not to bend any of the conductors.
 
