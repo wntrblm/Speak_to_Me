@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" /><!-- Page author --><link rel="canonical" href="https://speak.wntr.dev/build/" /><link
+  rel="shortcut icon"
+  sizes="192x192"
+  href="/icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="192x192"
+  href="/icon.png" />
+
+<meta name="generator" content="mkdocs-1.5.3" /><!-- Title --><title>
+          Speak to Me
+          
+            
+          
+
+          
+            - Kit build guide
+          
+        </title><link rel="stylesheet" href="../winter.css" /></head>
+
+  <body
+    class=""
+    data-page="build/"><header>
+        <nav role="navigation" aria-label="main navigation">
+          <ul>
+            <li>
+              <a href="..">Speak to Me</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img class="logo" src="/winterbloom.png" alt="Winterbloom logo" />
+            </li>
+          </ul>
+        </nav>
+        <nav role="navigation" aria-label="secondary navigation">
+          <ul class="has-dividers"><li>
+                <a
+                  
+                  href="..">
+                  Manual
+                </a>
+              </li><li>
+                <a
+                  aria-current
+                  href="./">
+                  Build
+                </a>
+              </li></ul>
+          <ul><li>
+              <winter-dark-mode></winter-dark-mode>
+            </li>
+          </ul>
+        </nav>
+      </header><main
+      class="hide-title">
+  <article class="content"><h1 id="build">Build<a class="headerlink" href="#build" title="Permanent link">#</a></h1>
+<p>Welcome to the build guide for Speak to Me's DIY kit. We hope you have a great time putting this module together and a wonderful time using it.</p>
+<p>Please <strong>read all instructions</strong> thoroughly before starting. If you have questions or run into trouble please reach out to us on <a href="https://discord.gg/UpfqghQ">discord</a> or drop us an email at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a>.</p>
+<p>This kit is a beginner-level kit, but it does have a few tricky parts. If it's your first time soldering we recommend reading through <a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering">Adafruit's guide to excellent soldering</a> and practicing a little before jumping in.</p>
+<p>This build takes around <strong>two hours</strong> to complete.</p>
+<h2 id="tools-required">Tools required<a class="headerlink" href="#tools-required" title="Permanent link">#</a></h2>
+<p>Before you begin, make sure that you've got:</p>
+<ul>
+<li>Safety glasses. Yes, <strong>really</strong>. A pair like <a href="https://a.co/d/dMXvPP6">these</a> are fine.</li>
+<li>Proper ventilation, like this <a href="https://a.co/d/eUfPCRO">small filtered fan</a>.</li>
+<li>A <strong>temperature-controlled</strong> soldering iron, like this <a href="https://www.adafruit.com/product/1204">Hakko</a> or the <a href="https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/">Pinecil</a>. It is very important to use a temperature-controlled iron, since unregulated irons can easily get hot enough to damage components. You should set your iron temperature based on your solder manufacturer's recommendations.</li>
+<li>Solder. We recommend <a href="https://www.adafruit.com/product/734">Adafruit's SAC305 solder</a> or <a href="https://www.kester.com/products/product/275-flux-cored-wire">Kester 275 K100LD</a>.</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Flux</p>
+<p>We suggest using solder with "no clean" flux. If you use a different kind of flux, be sure to carefully clean the flux residue off based on the guidelines provided by the manufacturer of your solder. Take special care with the LEDs and potentiometers, as they can be damaged by water and flux cleaners.</p>
+</div>
+<h2 id="kit-contents">Kit contents<a class="headerlink" href="#kit-contents" title="Permanent link">#</a></h2>
+<p>Your kit should contain the following items. If any are missing please email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#119;&#105;&#110;&#116;&#101;&#114;&#98;&#108;&#111;&#111;&#109;&#46;&#99;&#111;&#109;</a>.</p>
+<p><winter-image-map src="../images/kit.svg">
+    <winter-image-map-item id="mainboard">Mainboard</winter-image-map-item>
+    <winter-image-map-item id="panel">Front panel</winter-image-map-item>
+    <winter-image-map-item id="jacks">1/8" jacks (2)</winter-image-map-item>
+    <winter-image-map-item id="jack-nuts">Hex nuts for the 1/8" jacks (2)</winter-image-map-item>
+    <winter-image-map-item id="power-header">Eurorack power header</winter-image-map-item>
+    <winter-image-map-item id="rubber-band">Rubber band</winter-image-map-item>
+    <winter-image-map-item id="jst-cable">JST wiring harness</winter-image-map-item>
+    <winter-image-map-item id="_2p5-l-wrench">2.5mm L wrench</winter-image-map-item>
+    <winter-image-map-item id="_2-l-wrench">2mm L wrench</winter-image-map-item>
+    <winter-image-map-item id="m3-bolts">M3x12 black hex bolts (4)</winter-image-map-item>
+    <winter-image-map-item id="m3-nuts">M3 nuts (4)</winter-image-map-item>
+    <winter-image-map-item id="jst-header">JST XH-2 header</winter-image-map-item>
+    <winter-image-map-item id="pot">Stereo potentiometer</winter-image-map-item>
+    <winter-image-map-item id="ffc">Flat flex cable</winter-image-map-item>
+    <winter-image-map-item id="speaker">Speaker</winter-image-map-item>
+    <winter-image-map-item id="grill">Grille cloth</winter-image-map-item>
+    <winter-image-map-item id="big-jack">1/4 stereo jack</winter-image-map-item>
+    <winter-image-map-item id="spacer">Speaker spacer</winter-image-map-item>
+    <winter-image-map-item id="knob">Knob</winter-image-map-item>
+    <winter-image-map-item id="headphone-breakout">Headphone jack breakout board</winter-image-map-item>
+</winter-image-map></p>
+<ul>
+<li>(1) Mainboard</li>
+<li>(1) Front panel</li>
+<li>(1) Headphone jack breakout board</li>
+<li>(1) Stereo potentiometer, including nut &amp; washer</li>
+<li>(1) Speaker</li>
+<li>(1) 20mm aluminum knob</li>
+<li>(4) M3x12 black hex bolts</li>
+<li>(4) M3 nuts</li>
+<li>(1) Grille cloth</li>
+<li>(1) Speaker spacer</li>
+<li>(1) 2mm L wrench</li>
+<li>(1) 2.5mm L wrench</li>
+<li>(1) 5-position flat flex cable</li>
+<li>(2) 1/8" jacks, including nuts</li>
+<li>(1) 1/4" stereo jack, including nut</li>
+<li>(1) JST XH-2 header</li>
+<li>(1) JST 2-pin wiring harness</li>
+<li>(1) Eurorack power header</li>
+<li>(1) Rubber band</li>
+</ul>
+<h2 id="soldering-the-power-header">Soldering the power header<a class="headerlink" href="#soldering-the-power-header" title="Permanent link">#</a></h2>
+<p>Your first task is to place and solder the power header and JST header to the mainboard.</p>
+<p><img alt="The mainboard, power header, and JST header" src="../images/2-mb-3.jpg" /></p>
+<p>Start by placing the power header onto the back side of the mainboard, being careful to align the notch in the header with the drawing on the board. The power header fits snugly, so you might have to give it a little pressure to push it all the way in.</p>
+<p><img alt="The power header being placed on to the back side of the motherboard" src="../images/3-pw-5.jpg" /></p>
+<p>Flip the board over to the front side and solder the header's 10 pins. Take care not to damage any of the nearby components.</p>
+<p><img alt="The power header's pins being soldered in place" src="../images/4-pws-8.jpg" /></p>
+<p>Next, place the JST header on the back side of the board. Just like with the power header, align the header with the drawing on the board. The header should not hang over the edge of the board.</p>
+<p><img alt="The JST header placed on the back side of the board" src="../images/5-jst-4.jpg" /></p>
+<p>Flip the board over and solder the JST header's two pins.</p>
+<p><img alt="The JST header's pin being soldered in place" src="../images/6-jsts-3.jpg" /></p>
+<h2 id="placing-the-front-side-components">Placing the front side components<a class="headerlink" href="#placing-the-front-side-components" title="Permanent link">#</a></h2>
+<p>Next up is placing the components on the front side of the mainboard. You'll need the 1/8" jacks, the stereo potentiometer, the front panel, and the rubber band for this section.</p>
+<p><img alt="The panel, mainboard, 1/8&quot; jacks, stereo potentiometer, and a rubber band" src="../images/7-jacks-and-pot-4.jpg" /></p>
+<p>Start by placing the potentiometer on the front side of the board. You might need to slightly straighten out the legs of the potentiometer to get it to go in - don't use excessive force to push it in. Remove the nut and washer on the potentiometer and set it aside for now.</p>
+<p><img alt="The potentiometer placed on the front side of the board" src="../images/8-pot-3.jpg" /></p>
+<p>Continue by placing the two 1/8" jacks on the front side of the board. Be sure to get the little flexible third leg into its hole.</p>
+<p><img alt="The two 1/8&quot; jacks placed on the front side of the board" src="../images/9-jacks-2.jpg" /></p>
+<h2 id="using-the-front-panel-as-a-jig">Using the front panel as a jig<a class="headerlink" href="#using-the-front-panel-as-a-jig" title="Permanent link">#</a></h2>
+<p>Since the potentiometer and jacks need to peek through the front panel, you can use it as a jig to make sure everything stays in the right place while soldering. Carefully line up the front panel's holes with the potentiometer and jack and push the front panel on.</p>
+<p><img alt="The panel being placed over the mainboard's jacks and potentiometer" src="../images/10-panel-1.jpg" /></p>
+<p>Use the rubber band to temporarily hold the front panel on while you're working on it. You'll need to double- or triple- over the rubber band to get it tight.</p>
+<p><winter-carousel>
+    <img alt="A rubber band being pulled taught across the center of the module" src="../images/11-rubber-band-4.jpg" />
+    <img alt="The module with a doubled-overed rubber band holding the panel in place" src="../images/11-rubber-band-3.jpg" />
+    <img alt="The same but showing the back side of the module" src="../images/11-rubber-band-2.jpg" />
+</winter-carousel></p>
+<h2 id="soldering-the-front-side-components">Soldering the front side components<a class="headerlink" href="#soldering-the-front-side-components" title="Permanent link">#</a></h2>
+<p>With everything held in place, you can now flip the module over and solder all of the front panel components in place. As you go, take a moment now and then to check that everything is flush with the panel and mainboard.</p>
+<p>Start by soldering the two 1/8" jacks.</p>
+<p><img alt="The pins on the 1/8&quot; jacks being soldered in place" src="../images/12-soldering-jacks-2.jpg" /></p>
+<p>Next up is the potentiometer. This one can be a little tricky so read through all of these instructions and use caution. First, move the rubber band slightly to get a clear look at the potentiometer's holes.</p>
+<p><img alt="The back side of the board, showing the rubber band moved down slightly to reveal the pins and legs for the potentiometer" src="../images/13-soldering-pot-9.jpg" /></p>
+<p>Next, solder the two <em>large</em> legs of the potentiometer one at a time. When soldering the one next to the power header, be careful not to melt the power header with your iron. After soldering the first one, double-check that the potentiometer is flush with the mainboard and adjust if needed.</p>
+<p><img alt="The potentiometer's leg being soldered in place" src="../images/13-soldering-pot-2.jpg" /></p>
+<p>With the two legs soldered, finish up by soldering the six remaining pins.</p>
+<p><img alt="The potentiometer's 6 pins being soldered" src="../images/14-soldering-pot-pt-2-2.jpg" /></p>
+<h2 id="soldering-the-flat-flex-cable-to-the-mainboard">Soldering the flat flex cable to the mainboard<a class="headerlink" href="#soldering-the-flat-flex-cable-to-the-mainboard" title="Permanent link">#</a></h2>
+<p>Next up is soldering the flat flex cable to the mainboard.</p>
+<p><img alt="The mainboard and the flat flex cable" src="../images/15-ffc-1.jpg" /></p>
+<p>Prepare the flat flex cable by removing the cover on one side of it. Just pull up lightly to get the cover to come off- <strong>do not cut the flat flex cable</strong>.</p>
+<p><winter-carousel>
+    <img alt="The flat flex cable with the small cover on the top of it being held lightly" src="../images/16-ffc-prep-3.jpg" />
+    <img alt="The flat flex cable with the small cover on the top removed, revealing the conductors" src="../images/16-ffc-prep-1.jpg" />
+</winter-carousel></p>
+<p>Push the exposed conductors of the flat flex cable through the matching holes on the motherboard. This is designed to go together easily, just be take care not to bend any of the conductors.</p>
+<p><img alt="The flat flex cable placed through the five holes on the mainboard through the back side" src="../images/17-ffc-connect-3.jpg" /></p>
+<p>With everything in place, solder the five flat flex cable conductors to the motherboard.</p>
+<p><img alt="The flat flex cable's five conductors soldered onto the mainboard" src="../images/18-solder-ffc-1.jpg" /></p>
+<h2 id="soldering-the-flat-flex-cable-to-the-headphone-breakout">Soldering the flat flex cable to the headphone breakout<a class="headerlink" href="#soldering-the-flat-flex-cable-to-the-headphone-breakout" title="Permanent link">#</a></h2>
+<p>With one side of the flat flex cable done, the next step is to connect the other side to the headphone breakout board.</p>
+<p><img alt="The mainboard (with the flat flex cable attached) and the headphone breakout board" src="../images/19-ffc-and-hp-breakout-5.jpg" /></p>
+<p>Just like in the previous step, remove the cover for the flat flex cable. Push it through the matching holes on the headphone breakout board. Note the orientation of the breakout board relative to the mainboard. The side <strong>without any text</strong> is the front side and should be facing the same direction as the front side of the mainboard.</p>
+<p><img alt="The five conductors of the flat flex cable pushed through the five holes on the headphone breakout board" src="../images/20-ffc-hp-1.jpg" /></p>
+<p>Double check the orientation and then solder the flat flex cable in place.</p>
+<p><img alt="The five conductors of the flat flex cable soldered to the headphone breakout board" src="../images/21-ffc-soldering4.jpg" /></p>
+<h2 id="soldering-the-14-jack">Soldering the 1/4" jack<a class="headerlink" href="#soldering-the-14-jack" title="Permanent link">#</a></h2>
+<p>Next up is soldering the large 1/4" jack to the jack breakout board. Before starting, remove the nut and washer from the jack and set aside.</p>
+<p><img alt="The mainboard assembly with flat flex cable and headphone breakout attached along with the large 1/4&quot; jack" src="../images/22-big-jack-4.jpg" /></p>
+<p>Place the jack on the front side of the breakout board. The jack has one slanted side so that it can only go in one way. The jack's legs will not go all the way through the board so don't use excessive force to place it.</p>
+<p><img alt="The large 1/4&quot; jack placed on to the front side of the headphone breakout board" src="../images/23-big-jack-placement-4.jpg" /></p>
+<p>Solder the legs of the jack and take care not to melt the flat flex cable.</p>
+<p><img alt="The back side of the headphone breakout board with the 1/4&quot;'s legs being soldered in place" src="../images/24-big-jack-soldering-5.jpg" /></p>
+<h2 id="preparing-the-speaker">Preparing the speaker<a class="headerlink" href="#preparing-the-speaker" title="Permanent link">#</a></h2>
+<p>With the mainboard complete, your next task is to prepare the speaker. You'll need the speaker and the JST wiring harness.</p>
+<p><img alt="The speaker and the JST wiring harness" src="../images/25-speaker-and-jst-4.jpg" /></p>
+<p>Un-twist the end of the leads a little and solder the leads to the eyelets on the speaker. For Speak to Me, polarity does not matter, however, if you like to be thorough and proper the speaker's eyelets are marked with "+" and "-". Solder the black lead to the "-" eyelet and the red lead to the "+" eyelet.</p>
+<p><img alt="The leads of the JST wiring harness being soldered to the speaker" src="../images/27-speaker-soldering-1.jpg" /></p>
+<p>At this point you are done soldering! You can put your iron away if you'd like.</p>
+<h2 id="mounting-the-speaker">Mounting the speaker<a class="headerlink" href="#mounting-the-speaker" title="Permanent link">#</a></h2>
+<p>Now that the speaker has its cable, your next task is to mount it to the front panel. You'll need the speaker, panel, grill cloth, speaker spacer, the four M3 bolts and nuts, and the 2.5mm L wrench.</p>
+<p><img alt="The panel, speaker, grill cloth, speaker spacer, M3 bolts, M3 nuts, and a 2.5mm L wrench" src="../images/28-speaker-hardware-2.jpg" /></p>
+<p>Start by pushing two of the bolts through the mounting holes on the front side of the panel and then placing the panel face-down with the bolts sticking up. Put the bolts on opposite corners - one at the bottom-right and one at the top-left.</p>
+<p><img alt="The panel with two bolts placed through it, lying face down with the bolts sticking up" src="../images/29-bolts-1.jpg" /></p>
+<p>Next, place the grill cloth through the bolts and flush up against the panel.</p>
+<p><img alt="The same picture, but with the grill cloth placed on the bolts and flush against the panel" src="../images/30-grill-2.jpg" /></p>
+<p>Now place the speaker spacer through the bolts and flush against the grill cloth.</p>
+<p><img alt="The same picture, but now with the speaker spacer placed on the bolts and flush against the panel" src="../images/31-spacer-1.jpg" /></p>
+<p>Then place the speaker through the bolts and flush against the spacer. The bolts might be a bit tight here, if needed, flip the assembly over and use the 2.5mm L wrench to screw the bolts through.</p>
+<p><img alt="The same picture, but now with the speaker placed on the boards and flush against the spacer" src="../images/32-mount-speaker-2.jpg" /></p>
+<p>Take one of the M3 nuts and attach it to the bolt on the top of the speaker. Don't fully tighten it yet.</p>
+<p><img alt="The speaker assembly with an M3 nut being hand-tightened onto one of the bolts" src="../images/33-first-nut-3.jpg" /></p>
+<p>Do the same with the bolt on the bottom of the speaker. The speaker's eyelet might be in the way a little, you can bend it <strong>very slightly</strong> up to give yourself a bit more space. You can use the 2.5mm L wrench to back the bolt out a bit if needed.</p>
+<p><img alt="The assembly with another M3 nut being placed while turning the bolt with the 2.5mm L wrench" src="../images/34-tighten-nut-2.jpg" /></p>
+<p>Add the remaining two bolts and nuts. These bolts will have a lot more resistance than the first two and you'll need to use the 2.5 L wrench to screw them through the grill cloth, speaker spacer, and speaker to reach the bolt.</p>
+<p><img alt="The front of the assembly with a third bolt being placed through one of the corners" src="../images/35-other-bolts-4.jpg" /></p>
+<p>Finally, tighten all the bolts carefully with the 2.5mm L wrench. They should be snug but do not over-tighten then as you could crack the speaker spacer.</p>
+<p><img alt="The front of the assembly with one of the bolts being tightening with the 2.5mm L wrench" src="../images/36-tighten-all-bolts-3.jpg" /></p>
+<h2 id="mounting-mainboard-to-the-panel">Mounting mainboard to the panel<a class="headerlink" href="#mounting-mainboard-to-the-panel" title="Permanent link">#</a></h2>
+<p>With the speaker mounted to the panel, it's time to mount the mainboard. You'll need the panel assembly, the mainboard, the nuts for the 1/8" jack, the jack and washer for the potentiometer, and the jack and washer for the 1/4" jack.</p>
+<p>Place the panel over the 1/8" jacks and the potentiometer - the same way you did when using the panel to align components before soldering them.</p>
+<p><img alt="The main board pushed flush against the back of the panel" src="../images/37-mount-panel-2.jpg" /></p>
+<p>Use the potentiometer's washer and nut to secure it to the panel.</p>
+<p><img alt="The potentiometer's nut being tightened by hand" src="../images/38-mount-pot-1.jpg" /></p>
+<p>Secure the two 1/8" with their nuts.</p>
+<p><img alt="The two 1/8&quot; jack nuts being placed and tightened by hand" src="../images/39-mount-jacks-3.jpg" /></p>
+<p>Push the large 1/4" jack through its hole in the panel. The flat flex cable will need to bend a bit to get it all to line up.</p>
+<p><img alt="The large 1/4&quot; jack being pushed through its hole in the front panel, with the flat flex cable bending to accommodate the new position." src="../images/40-align-big-jack-2.jpg" /></p>
+<p>Use the 1/4" jack's washer and nut to secure it to the panel.</p>
+<p><img alt="The large 1/4&quot; jack secured in place using its washer and nut" src="../images/41-mount-big-jack-5.jpg" /></p>
+<h2 id="adding-the-volume-knob">Adding the volume knob<a class="headerlink" href="#adding-the-volume-knob" title="Permanent link">#</a></h2>
+<p>You're almost done! Next up is putting the volume knob on. You'll need the 2mm L wrench for this section.</p>
+<p><img alt="The 20mm aluminum volume know and a 2mm L wrench" src="../images/42-knob-4.jpg" /></p>
+<p>Using the 2mm L wrench, loosen the grub screw inside the knob. Don't completely remove it, just loosen it enough so that it's not obstructing the hole in the center.</p>
+<p><img alt="The 2mm L wrench being used to loosen the grub nut inside the knob" src="../images/43-knob-loosen-2.jpg" /></p>
+<p>Before placing the knob, turn the potentiometer manually all the way counter-clockwise. Place the knob over the potentiometer's shaft with the white stripe pointing to about 7 o' clock.</p>
+<p><img alt="The knob placed on the front panel, with its white stripe pointing to 7 o' clock" src="../images/44-knob-placement-2.jpg" /></p>
+<p>Use the 2.5mm L wrench to tighten the grub screw and secure the knob to the potentiometer's shaft.</p>
+<p><img alt="The 2.5mm L wrench being used to tighten the grub screw againt the potentiometer" src="../images/45-tighten-knob-5.jpg" /></p>
+<h2 id="plugging-in-the-speaker">Plugging in the speaker<a class="headerlink" href="#plugging-in-the-speaker" title="Permanent link">#</a></h2>
+<p>The last step is to plug in the speaker. Flip the module over and grab the speaker's JST cable.</p>
+<p><img alt="The back side of the module, showing the speaker's JST cable" src="../images/46-speaker-connection-2.jpg" /></p>
+<p>Push the end of the JST cable into the JST header on the mainboard. It might take a little bit of force to get the cable to snap into place.</p>
+<p><img alt="The JST cable plugged into the JST header on the mainboard" src="../images/47-speaker-connected-4.jpg" /></p>
+<h2 id="all-done">All done<a class="headerlink" href="#all-done" title="Permanent link">#</a></h2>
+<p>Congratulations! You've finished your very own Speak to Me!</p>
+<p><img alt="The compeleted module" src="../images/48-done-4.jpg" /></p>
+<p>Now that it's all put together go check out the <a href="">User's Guide</a> and please show us your work by tweeting at <a href="https://twitter.com/wntrblm">@wntrblm</a> or tagging <a href="https://instagram.com/wntrblm">@wntrblm</a> in your instagram post.</p></article>
+</main><footer>
+        <ul>
+          <li>
+            © 2024
+            Winterbloom · Alethea Flowers
+          </li>
+          <li>
+            Published under
+            <a
+              href="https://github.com/wntrblm/Speak_to_Me/blob/main/docs/LICENSE">
+              CC BY-SA 4.0
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="updated">
+            Last updated on 2024/2/23
+          </li>
+          <li>
+            <a href="https://github.com/wntrblm/Speak_to_Me/edit/main/user_guide/docs/build.md">Edit this page on GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:support@winterbloom.com">
+              Send us a message
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <script type="module" src="../winter.js"></script>
+      
+    
+  </body>
+</html>

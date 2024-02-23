@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" /><!-- Page author --><link rel="canonical" href="https://speak.wntr.dev/" /><link
+  rel="shortcut icon"
+  sizes="192x192"
+  href="/icon.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="192x192"
+  href="/icon.png" />
+
+<meta name="generator" content="mkdocs-1.5.3" /><!-- Title --><title>
+          Speak to Me
+          
+            
+          
+
+          
+        </title><link rel="stylesheet" href="winter.css" /></head>
+
+  <body
+    class=""
+    data-page=""><header>
+        <nav role="navigation" aria-label="main navigation">
+          <ul>
+            <li>
+              <a href=".">Speak to Me</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <img class="logo" src="/winterbloom.png" alt="Winterbloom logo" />
+            </li>
+          </ul>
+        </nav>
+        <nav role="navigation" aria-label="secondary navigation">
+          <ul class="has-dividers"><li>
+                <a
+                  aria-current
+                  href=".">
+                  Manual
+                </a>
+              </li><li>
+                <a
+                  
+                  href="build/">
+                  Build
+                </a>
+              </li></ul>
+          <ul><li>
+              <winter-dark-mode></winter-dark-mode>
+            </li>
+          </ul>
+        </nav>
+      </header><main
+      class="hide-title">
+  <article class="content"><h1 id="speak-to-me-user-guide">Speak to Me User Guide<a class="headerlink" href="#speak-to-me-user-guide" title="Permanent link">#</a></h1>
+<p><a href="https://winterbloom.com/store/speak-to-me">Speak to Me</a> is rock solid high-quality headphone amplifier with a delightfully lo-fi speaker.</p>
+<div class="toc">
+<ul>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#getting-support-and-help">Getting support and help</a></li>
+<li><a href="#installing-the-module">Installing the module</a></li>
+<li><a href="#making-connections">Making connections</a></li>
+<li><a href="#recommended-accessories">Recommended accessories</a></li>
+<li><a href="#open-source-hardware-software">Open source hardware &amp; software</a></li>
+<li><a href="#warranty-disclaimers-and-limits">Warranty, disclaimers, and limits</a></li>
+<li><a href="#acknowledgments-and-thanks">Acknowledgments and thanks</a></li>
+</ul>
+</div>
+<h2 id="specifications">Specifications<a class="headerlink" href="#specifications" title="Permanent link">#</a></h2>
+<ul>
+<li>Available <a href="https://winterbloom.com/shop/speak-to-me">assembled</a> or as a <a href="https://winterbloom.com/shop/speak-to-me-kit">kit</a></li>
+<li><code>6 HP</code></li>
+<li><code>+12v @ 15 to 150mA</code>, <code>-12v @ 5mA</code></li>
+<li><code>30mm</code> deep</li>
+<li>Stereo input, with right channel normalled to left</li>
+<li>Stereo 1/4" TRS output suitable for headphones and line level.</li>
+<li>Mono, <code>1.4W</code> speaker</li>
+<li><a href="https://www.modulargrid.net/e/winterbloom-speak-to-me">ModularGrid page</a></li>
+</ul>
+<h2 id="getting-support-and-help">Getting support and help<a class="headerlink" href="#getting-support-and-help" title="Permanent link">#</a></h2>
+<p>We want you to have a wonderful experience with your module. If you need help or run into problems, please reach out to us. <a href="mailto:support@winterbloom.com">Email</a> is the best way for product issues, whereas <a href="https://discord.gg/UpfqghQ">Discord</a> and <a href="https://github.com/wntrblm/Speak_to_Me/issues">GitHub</a> are great for getting advice and help on how to customize your module.</p>
+<ul>
+<li>Send us <a href="mailto:support@winterbloom.com">an email</a></li>
+<li>File a bug <a href="https://github.com/wntrblm/Speak_to_Me/issues">on GitHub</a></li>
+<li>Reach out on the <a href="https://discord.gg/UpfqghQ">Discord</a></li>
+</ul>
+<h2 id="installing-the-module">Installing the module<a class="headerlink" href="#installing-the-module" title="Permanent link">#</a></h2>
+<p>To install this into your Eurorack setup, connect a Eurorack power cable from your power supply to the back of the module. <strong>Note that even though there's a keyed power connector on the module, double check that the red stripe is on the side labeled <code>red stripe</code>!</strong> Once you've connected the power cable, secure your module to your rack rails using screws.</p>
+<h2 id="making-connections">Making connections<a class="headerlink" href="#making-connections" title="Permanent link">#</a></h2>
+<p>There's a few different ways that you can patch Speak to Me depending on your setup and needs. The following sections walk through the various ways of using Speak to Me.</p>
+<h3 id="mono-in-with-speaker">Mono in with speaker<a class="headerlink" href="#mono-in-with-speaker" title="Permanent link">#</a></h3>
+<p><img alt="Mono input with the speaker active" src="images/mono-in-speaker.svg" /></p>
+<p>The most basic setup. Connect Eurorack-level audio to the top 3.5mm jack and Speak to Me will play the audio through its speaker</p>
+<p>This is great for small setups but also super useful in larger racks if you want to <em>monitor</em> a small part of your patch.</p>
+<h3 id="stereo-in-with-speaker">Stereo in with speaker<a class="headerlink" href="#stereo-in-with-speaker" title="Permanent link">#</a></h3>
+<p><img alt="Stereo input with speaker active" src="images/stereo-in-speaker.svg" /></p>
+<p>Connect the Eurorack-level audio signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack. Speak to Me will downmix the two signals to mono and play the audio through the speaker.</p>
+<p>Like the mono setup, this is great for small setups and monitoring. It has the added benefit of being able
+to monitor two (possibly unrelated) signals at the same time.</p>
+<h3 id="mono-in-with-headphones">Mono in with headphones<a class="headerlink" href="#mono-in-with-headphones" title="Permanent link">#</a></h3>
+<p><img alt="Mono input with headphones" src="images/mono-in-headphones.svg" /></p>
+<p>Connect Eurorack-level audio to the top 3.5mm jack and connect a pair of stereo headphones to the larger 1/4" TRS jack. Speak to Me will play the audio through both the left and right headphone - no need to patch the same signal twice. The speaker is automatically turned off when headphones are connected.</p>
+<p>Just like with the previous setup, this is wonderful for small setups and monitoring larger racks. One major benefit to this setup is that the module consumes much less power when the speaker is off, so this is ideal for portable and battery-powered setups.</p>
+<h3 id="stereo-in-with-headphones">Stereo in with headphones<a class="headerlink" href="#stereo-in-with-headphones" title="Permanent link">#</a></h3>
+<p><img alt="Stereo input with headphones" src="images/stereo-in-headphones.svg" /></p>
+<p>Connect the Eurorack-level audio signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack. Connect a pair of stereo headphones to the larger 1/4" TRS jack. Speak to Me will play the audio through the headphones. The speaker is automatically turned off when headphones are connected.</p>
+<p>Like the mono setup, this benefits from lower power consumption which is ideal for portable and battery-powered setups. It can also be used to monitor two different signals (one in each ear) if needed.</p>
+<h3 id="mono-in-with-line-out">Mono in with line out<a class="headerlink" href="#mono-in-with-line-out" title="Permanent link">#</a></h3>
+<p>First, connect the Eurorack-level audio signal to the top 3.5mm jack.</p>
+<p>Next, connect Speak to Me's 1/4" stereo output to your mixer, interface, or other line-level equipment. The specific cable needed to do this depends on your equipment's input options.</p>
+<p>If your equipment has a <strong>stereo</strong> line input, you can use a 1/4" TRS stereo cable <a href="https://hosatech.com/products/analog-audio/interconnect-cables/single-interconnects/css-100/">like this one</a>. Even though the interconnect is a stereo cable, Speak to Me will send the same signal to both channels:</p>
+<p><img alt="Mono input with stereo cable line out" src="images/line-mono.svg" /></p>
+<p>If your equipment has <strong>mono</strong> line, instrument, or microphone inputs such as those commonly found on recording interfaces, you can use a 1/4" TRS to 1/4" TS to adapter <a href="https://hosatech.com/products/analog-audio/adapters/general-adapters/gpp-419/">like this one</a>:</p>
+<p><img alt="Mono input with mono cable line out" src="images/line-mono-alt.svg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Mono cables</p>
+<p>We highly recommend using the TRS to TR adapter over using a typical mono 1/4" TR cable. Using a mono cable directly might, in extreme cases, cause some audio issues such as "hiccups". This is because using a mono cable shorts the signal on the ring connector to ground and causes the module to draw more power. Speak to Me is <a href="#warranty-disclaimers-and-limits">designed to operate</a> under these conditions, but we wanted to let you know just in case.</p>
+</div>
+<p>Alternatively, you can use a 1/4" TRS Y-cable <a href="https://hosatech.com/products/analog-audio/stereo-breakouts/hosa-breakouts/cmp-150/">like this one</a> as an adapter. You can connect either end of the Y cable to your equipment.</p>
+<p><img alt="Mono input with split cable line out" src="images/line-split-mono.svg" /></p>
+<p>This setup is great for getting audio out of your Eurorack and into a recording, mixer, or line-level effects units.</p>
+<h3 id="stereo-in-with-line-out">Stereo in with line out<a class="headerlink" href="#stereo-in-with-line-out" title="Permanent link">#</a></h3>
+<p>First, connect the Eurorack-level audio signal inputs: connect the signal for the left channel to the top 3.5mm jack and the signal for the right channel to the bottom 3.5mm jack.</p>
+<p>Next, connect Speak to Me's 1/4" stereo output to your mixer, interface, or other line-level equipment. The specific cable needed to do this depends on your equipment's input options.</p>
+<p>If your equipment has a <strong>stereo</strong> line input, you can use a 1/4" TRS stereo cable <a href="https://hosatech.com/products/analog-audio/interconnect-cables/single-interconnects/css-100/">like this one</a>:</p>
+<p><img alt="Stereo input with stereo line out" src="images/line-stereo.svg" /></p>
+<p>However, if your equipment has <strong>mono</strong> line, instrument, or microphone inputs such as those commonly found on recording interfaces, you'll need to use a 1/4" TRS Y-cable <a href="https://hosatech.com/products/analog-audio/stereo-breakouts/hosa-breakouts/cmp-150/">like this one</a> to split the left and right channels. You'll then connect each channel into a separate input on your equipment:</p>
+<p><img alt="Stereo input with split line out" src="images/line-split-stereo.svg" /></p>
+<p>Like the mono setup, this is great for getting audio out of your Eurorack and into a recording, mixer, or line-level effects units. It's especially useful if you have modules that produce stereo effects or if you want to record two independent patches at the same time.</p>
+<h3 id="stereo-speakers">Stereo speakers<a class="headerlink" href="#stereo-speakers" title="Permanent link">#</a></h3>
+<p><img alt="Stereo speaker setup using two Speak to Me modules" src="images/dual-wielding.svg" /></p>
+<p>If you happen to have <strong>two</strong> Speak to Me modules, you can set up one module on each side of your rack and use them as a pair of stereo speakers. Connect your right channel signal to the top 3.5mm input on the right-side Speak to Me and connect the left channel signal to the top 3.5mm input on the left side.</p>
+<h2 id="recommended-accessories">Recommended accessories<a class="headerlink" href="#recommended-accessories" title="Permanent link">#</a></h2>
+<p>Like most audio equipment, connecting Speak to Me to external equipment can require using adapters. We recommend <a href="https://hosatech.com">HOSA</a> cables and adapters. You can purchase these online or through a local music equipment retailer.</p>
+<ul>
+<li><a href="https://hosatech.com/products/analog-audio/adapters/general-adapters/gpm-103/">3.5mm TRS to 1/4" TRS adapter</a> for connecting headphones that have the smaller 3.5mm plug to Speak to Me's 1/4" jack.</li>
+<li><a href="https://hosatech.com/products/analog-audio/interconnect-cables/single-interconnects/css-100/">1/4" TRS cable</a> for connecting Speak to Me's line output to equipment that accepts stereo TRS inputs.</li>
+<li><a href="https://hosatech.com/products/analog-audio/stereo-breakouts/hosa-breakouts/cmp-150/">1/4" stereo breakout</a> for splitting Speak to Me's stereo output into separate left and right channel signals.</li>
+<li><a href="https://hosatech.com/products/analog-audio/adapters/general-adapters/gpp-419/">1/4" TS to 1/4" TRS adapter</a> for connecting a 1/4" mono TS cable to Speak to Me's stereo output.</li>
+</ul>
+<h2 id="open-source-hardware-software">Open source hardware &amp; software<a class="headerlink" href="#open-source-hardware-software" title="Permanent link">#</a></h2>
+<p>Speak to Me is completely open source and hacking is encouraged.</p>
+<p>The <a href="https://github.com/wntrblm/Speak_to_Me/tree/main/hardware">hardware design</a> is available under the permissive <a href="https://cern-ohl.web.cern.ch/">CERN-OHL-P v2</a> and is designed using <a href="https://kicad.org/">KiCAD</a> which is free and open-source. You can open the hardware files using KiCAD or you can <a href="https://github.com/wntrblm/Speak_to_Me/tree/main/hardware/board/board.pdf">check out a PDF of the schematic</a>.</p>
+<p><img alt="Open Source Hardware Association mark" class="inline small" src="images/oshw.svg" /> Speak to Me is <a href="https://certification.oshwa.org/us002060.html">certified open source hardware</a></p>
+<h2 id="warranty-disclaimers-and-limits">Warranty, disclaimers, and limits<a class="headerlink" href="#warranty-disclaimers-and-limits" title="Permanent link">#</a></h2>
+<p>Modules purchased from Winterbloom have a warranty of six months from the date of purchase. This warranty covers any manufacturing defects in the module. It does not cover damage from due to incorrect handling, storage, or power, overvoltage events, or modifications.</p>
+<p>Please <a href="mailto:support@winterbloom.com">contact us</a> if you are experiencing issues with your module. Modules returned under warranty will either be refunded, replaced, or repaired at our discretion. You will be responsible for the cost of returning the module to Winterbloom.</p>
+<p>Because Eurorack has a vast number of possible combinations of power supplies, modules, cases, and accessories, it is impossible for us to guarantee compatibility with every possible configuration. We make a reasonable effort to test modules with several power supplies, cases, and other modules.</p>
+<p>We encourage tinkering, however, we will not refund, repair, or replace any products that have been modified.</p>
+<p>We have stress tested Speak to Me under the following conditions. These are provided for reference only; we do not guarantee that that the module will function under these conditions.</p>
+<ul>
+<li>Continuous run time: at least 48 hours</li>
+<li>Overvoltage from power supply: at least <code>±18 volts</code></li>
+<li>Reverse voltage from power supply: at least <code>±18 volts</code></li>
+<li>Undervoltage from power supply: as low as <code>±8 volts</code></li>
+<li>Over and under voltage on inputs: at least <code>±12 volts</code></li>
+<li>Outputs shorted to ground: at least 60 minutes</li>
+</ul>
+<h2 id="acknowledgments-and-thanks">Acknowledgments and thanks<a class="headerlink" href="#acknowledgments-and-thanks" title="Permanent link">#</a></h2>
+<p>Speak to Me would not be possible without the support of Winterbloom's incredible community, the Trans Synth Discord, and Noise Engineering.</p></article>
+</main><footer>
+        <ul>
+          <li>
+            © 2024
+            Winterbloom · Alethea Flowers
+          </li>
+          <li>
+            Published under
+            <a
+              href="https://github.com/wntrblm/Speak_to_Me/blob/main/docs/LICENSE">
+              CC BY-SA 4.0
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="updated">
+            Last updated on 2024/2/23
+          </li>
+          <li>
+            <a href="https://github.com/wntrblm/Speak_to_Me/edit/main/user_guide/docs/index.md">Edit this page on GitHub</a>
+          </li>
+          <li>
+            <a href="mailto:support@winterbloom.com">
+              Send us a message
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <script type="module" src="winter.js"></script>
+      
+    
+  </body>
+</html>
