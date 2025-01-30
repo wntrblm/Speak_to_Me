@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Speak to Me")
-		(date "2024-07-21")
-		(rev "v9")
+		(date "2024-08-28")
+		(rev "v10")
 		(company "Winterbloom")
 		(comment 1 "Alethea Flowers")
 		(comment 2 "CERN-OHL-P v2")
@@ -1243,7 +1243,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "YAG2323TR-ND"
+		(property "DigiKey" ""
 			(at 64.77 67.31 0)
 			(effects
 				(font
@@ -1271,15 +1271,6 @@
 			)
 		)
 		(property "MPN" "RT0603FRE071KL"
-			(at 64.77 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 64.77 67.31 0)
 			(effects
 				(font
@@ -1396,15 +1387,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "No"
-			(at 99.06 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 99.06 90.17 0)
 			(effects
 				(font
@@ -1539,7 +1521,7 @@
 				)
 			)
 		)
-		(property "Value" "TL074"
+		(property "Value" "TL074H"
 			(at 87.63 86.995 0)
 			(effects
 				(font
@@ -1575,24 +1557,6 @@
 				(hide yes)
 			)
 		)
-		(property "mpn" "TL074CPW"
-			(at 86.36 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "populate" "1"
-			(at 86.36 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Rating" ""
 			(at 86.36 82.55 0)
 			(effects
@@ -1619,7 +1583,7 @@
 				(hide yes)
 			)
 		)
-		(property "search link" ""
+		(property "Substitutes Allowed" "No"
 			(at 86.36 82.55 0)
 			(effects
 				(font
@@ -1752,7 +1716,7 @@
 				(justify left)
 			)
 		)
-		(property "DigiKey" "YAG2323TR-ND"
+		(property "DigiKey" ""
 			(at 99.06 104.14 0)
 			(effects
 				(font
@@ -1780,15 +1744,6 @@
 			)
 		)
 		(property "MPN" "RT0603FRE071KL"
-			(at 99.06 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 99.06 104.14 0)
 			(effects
 				(font
@@ -1882,7 +1837,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "YAG2323TR-ND"
+		(property "DigiKey" ""
 			(at 88.9 67.31 0)
 			(effects
 				(font
@@ -1891,7 +1846,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C375503"
+		(property "LCSC" "C469659"
 			(at 88.9 67.31 0)
 			(effects
 				(font
@@ -1909,16 +1864,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603FRE071KL"
-			(at 88.9 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
+		(property "MPN" "RT0603FRE0710KL"
 			(at 88.9 67.31 0)
 			(effects
 				(font
@@ -2012,7 +1958,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "YAG2323TR-ND"
+		(property "DigiKey" ""
 			(at 64.77 80.01 0)
 			(effects
 				(font
@@ -2040,15 +1986,6 @@
 			)
 		)
 		(property "MPN" "RT0603FRE071KL"
-			(at 64.77 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 64.77 80.01 0)
 			(effects
 				(font
@@ -2165,15 +2102,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "No"
-			(at 110.49 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 110.49 90.17 0)
 			(effects
 				(font

@@ -1,13 +1,13 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 47,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [
       "/Inputs/L_PRE"
     ],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 2,
     "opacity": {
       "images": 0.6,
@@ -68,7 +68,7 @@
       39,
       40
     ],
-    "visible_layers": "0015055_80000007",
+    "visible_layers": "0009b01_80000007",
     "zone_display_mode": 0
   },
   "git": {

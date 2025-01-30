@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Speak to Me")
-		(date "2024-07-21")
-		(rev "v9")
+		(date "2024-08-28")
+		(rev "v10")
 		(company "Winterbloom")
 		(comment 1 "Alethea Flowers")
 		(comment 2 "CERN-OHL-P v2")

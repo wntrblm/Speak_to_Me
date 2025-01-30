@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Speak to Me")
-		(date "2024-07-21")
-		(rev "v9")
+		(date "2024-08-28")
+		(rev "v10")
 		(company "Winterbloom")
 		(comment 1 "Alethea Flowers")
 		(comment 2 "CERN-OHL-P v2")
@@ -2440,21 +2440,21 @@
 				(hide yes)
 			)
 		)
-		(property "search link" ""
-			(at 57.15 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Rating" ""
 			(at 57.15 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Substitutes Allowed" "No"
+			(at 57.15 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "10"
@@ -2639,7 +2639,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Audio path"
 			(at 81.28 124.46 0)
 			(effects
 				(font
@@ -2648,7 +2648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "25V/10%/X7R"
+		(property "Rating" "16V/10%/X7R"
 			(at 84.455 126.9936 0)
 			(effects
 				(font
@@ -2657,7 +2657,7 @@
 				(justify right)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B105KO8NNNC"
 			(at 81.28 124.46 0)
 			(effects
 				(font
@@ -2675,7 +2675,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59782"
 			(at 81.28 124.46 0)
 			(effects
 				(font
@@ -2685,15 +2685,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 81.28 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 81.28 124.46 0)
 			(effects
 				(font
@@ -2835,7 +2826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Audio path"
 			(at 29.21 121.92 0)
 			(effects
 				(font
@@ -2844,7 +2835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "25V/10%/X7R"
+		(property "Rating" "16V/10%/X7R"
 			(at 29.2163 117.475 90)
 			(effects
 				(font
@@ -2852,7 +2843,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B105KO8NNNC"
 			(at 29.21 121.92 0)
 			(effects
 				(font
@@ -2870,7 +2861,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59782"
 			(at 29.21 121.92 0)
 			(effects
 				(font
@@ -2880,15 +2871,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 29.21 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 29.21 121.92 0)
 			(effects
 				(font
@@ -2967,7 +2949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Bypass cap"
 			(at 95.25 115.57 0)
 			(effects
 				(font
@@ -2985,7 +2967,7 @@
 				(justify left)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B104KB8NNNC"
 			(at 95.25 115.57 0)
 			(effects
 				(font
@@ -3003,7 +2985,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1591"
 			(at 95.25 115.57 0)
 			(effects
 				(font
@@ -3013,15 +2995,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 95.25 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 95.25 115.57 0)
 			(effects
 				(font
@@ -3208,7 +3181,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "YAG2323TR-ND"
+		(property "DigiKey" ""
 			(at 95.25 99.06 0)
 			(effects
 				(font
@@ -3217,7 +3190,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C375503"
+		(property "LCSC" "C863706"
 			(at 95.25 99.06 0)
 			(effects
 				(font
@@ -3235,16 +3208,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603FRE071KL"
-			(at 95.25 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
+		(property "MPN" "RT0603FRE0727RL"
 			(at 95.25 99.06 0)
 			(effects
 				(font
@@ -3322,33 +3286,6 @@
 				(hide yes)
 			)
 		)
-		(property "mpn" ""
-			(at 147.32 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "notes" "Connects to external breakout. Jack: SJ-63083D"
-			(at 147.32 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
-			(at 147.32 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Rating" ""
 			(at 147.32 113.03 0)
 			(effects
@@ -3366,7 +3303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" ""
+		(property "Notes" "Connects to external breakout. Jack: SJ-63083D"
 			(at 147.32 113.03 0)
 			(effects
 				(font
@@ -3454,7 +3391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Audio path"
 			(at 77.47 85.09 0)
 			(effects
 				(font
@@ -3463,7 +3400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "25V/10%/X7R"
+		(property "Rating" "16V/10%/X7R"
 			(at 80.645 87.6236 0)
 			(effects
 				(font
@@ -3472,7 +3409,7 @@
 				(justify right)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B105KO8NNNC"
 			(at 77.47 85.09 0)
 			(effects
 				(font
@@ -3490,7 +3427,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59782"
 			(at 77.47 85.09 0)
 			(effects
 				(font
@@ -3500,15 +3437,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 77.47 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 77.47 85.09 0)
 			(effects
 				(font
@@ -3601,7 +3529,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "YAG2323TR-ND"
+		(property "DigiKey" ""
 			(at 95.25 133.35 0)
 			(effects
 				(font
@@ -3610,7 +3538,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C375503"
+		(property "LCSC" "C863706"
 			(at 95.25 133.35 0)
 			(effects
 				(font
@@ -3628,16 +3556,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603FRE071KL"
-			(at 95.25 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
+		(property "MPN" "RT0603FRE0727RL"
 			(at 95.25 133.35 0)
 			(effects
 				(font
@@ -3807,7 +3726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Audio path"
 			(at 29.21 105.41 0)
 			(effects
 				(font
@@ -3816,7 +3735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "25V/10%/X7R"
+		(property "Rating" "16V/10%/X7R"
 			(at 29.2163 100.965 90)
 			(effects
 				(font
@@ -3824,7 +3743,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B105KO8NNNC"
 			(at 29.21 105.41 0)
 			(effects
 				(font
@@ -3842,7 +3761,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59782"
 			(at 29.21 105.41 0)
 			(effects
 				(font
@@ -3852,15 +3771,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 29.21 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 29.21 105.41 0)
 			(effects
 				(font
@@ -3939,7 +3849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Bypass cap"
 			(at 213.36 120.65 0)
 			(effects
 				(font
@@ -3957,7 +3867,7 @@
 				(justify left)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B104KB8NNNC"
 			(at 213.36 120.65 0)
 			(effects
 				(font
@@ -3975,7 +3885,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1591"
 			(at 213.36 120.65 0)
 			(effects
 				(font
@@ -3985,15 +3895,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 213.36 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 213.36 120.65 0)
 			(effects
 				(font
@@ -4230,7 +4131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Audio path"
 			(at 62.23 85.09 0)
 			(effects
 				(font
@@ -4239,7 +4140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "25V/10%/X7R"
+		(property "Rating" "16V/10%/X7R"
 			(at 64.77 87.6236 0)
 			(effects
 				(font
@@ -4248,7 +4149,7 @@
 				(justify right)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B105KO8NNNC"
 			(at 62.23 85.09 0)
 			(effects
 				(font
@@ -4266,7 +4167,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59782"
 			(at 62.23 85.09 0)
 			(effects
 				(font
@@ -4276,15 +4177,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 62.23 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 62.23 85.09 0)
 			(effects
 				(font
@@ -4372,6 +4264,15 @@
 			)
 		)
 		(property "MPN" "74LVC1G04GW, SN74LVC1G04DBV"
+			(at 236.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Substitutes Allowed" "No"
 			(at 236.22 114.3 0)
 			(effects
 				(font
@@ -4552,7 +4453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "Bulk cap"
+		(property "Notes" "Audio path"
 			(at 77.47 114.3 0)
 			(effects
 				(font
@@ -4561,7 +4462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rating" "25V/10%/X7R"
+		(property "Rating" "16V/10%/X7R"
 			(at 80.01 116.8336 0)
 			(effects
 				(font
@@ -4570,7 +4471,7 @@
 				(justify right)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10B105KO8NNNC"
 			(at 77.47 114.3 0)
 			(effects
 				(font
@@ -4588,7 +4489,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59782"
 			(at 77.47 114.3 0)
 			(effects
 				(font
@@ -4598,15 +4499,6 @@
 			)
 		)
 		(property "Substitutes Allowed" "Yes"
-			(at 77.47 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
 			(at 77.47 114.3 0)
 			(effects
 				(font
@@ -4712,7 +4604,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "375503"
+		(property "LCSC" "C728638"
 			(at 194.31 107.95 0)
 			(effects
 				(font
@@ -4730,16 +4622,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 194.31 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
+		(property "MPN" "RT0603FRE07100KL"
 			(at 194.31 107.95 0)
 			(effects
 				(font
@@ -4935,7 +4818,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "375503"
+		(property "LCSC" "C728638"
 			(at 203.2 114.3 0)
 			(effects
 				(font
@@ -4953,16 +4836,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 203.2 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "search link" ""
+		(property "MPN" "RT0603FRE07100KL"
 			(at 203.2 114.3 0)
 			(effects
 				(font
